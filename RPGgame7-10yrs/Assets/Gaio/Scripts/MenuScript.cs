@@ -41,15 +41,15 @@ public class MenuScript : MonoBehaviour
         {
             if (CurrentArrowPosition == 0)
             {
-                
+                SceneManager.LoadScene(3);
             }
             else if (CurrentArrowPosition == 1)
             {
-
+                SceneManager.LoadScene(2);
             }
             else if (CurrentArrowPosition == 2)
             {
-
+                Application.Quit();
             }
         }
 
