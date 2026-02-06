@@ -227,12 +227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d193671e4edefef4197d927bca042b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arrow: {fileID: 0}
+  Arrow: {fileID: 1820677726}
   CurrentArrowPosition: 0
   ArrowPositions:
-  - {x: -4, y: 0.9}
-  - {x: -3, y: -1}
-  - {x: -5, y: -2.8}
+  - {x: -4, y: 0.9, z: 0}
+  - {x: -3, y: -1, z: 0}
+  - {x: -5, y: -2.8, z: 0}
 --- !u!4 &240194347
 Transform:
   m_ObjectHideFlags: 0
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 1820677728}
   - component: {fileID: 1820677727}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -847,7 +847,7 @@ Transform:
   m_GameObject: {fileID: 1820677726}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5, y: -2.8, z: 0}
+  m_LocalPosition: {x: -4, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
