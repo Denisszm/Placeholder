@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4bcd59df002c5284ba89bda9b4724c49
+guid: 76590c90bf5c1944d81d3c3d2747961a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3994066901603132776
-    second: AnimationTest_0
-  - first:
-      213: 5825949491029168088
-    second: AnimationTest_1
-  - first:
-      213: -1469527204955683544
-    second: AnimationTest_2
+      213: 2410458051812182374
+    second: plasholderRPGGAME710_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AnimationTest_0
+      name: plasholderRPGGAME710_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 0
         y: 0
-        width: 58
-        height: 128
+        width: 1920
+        height: 1081
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89adcc080593298c0800000000000000
-      internalID: -3994066901603132776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AnimationTest_1
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 0
-        width: 58
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8df4924e13ee9d050800000000000000
-      internalID: 5825949491029168088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AnimationTest_2
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 0
-        width: 59
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82508d00bc03b9be0800000000000000
-      internalID: -1469527204955683544
+      spriteID: 669ce34b3daa37120800000000000000
+      internalID: 2410458051812182374
       vertices: []
       indices: 
       edges: []
@@ -197,10 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AnimationTest_0: -3994066901603132776
-      AnimationTest_1: 5825949491029168088
-      AnimationTest_2: -1469527204955683544
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
