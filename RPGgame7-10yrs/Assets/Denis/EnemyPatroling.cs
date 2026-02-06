@@ -6,6 +6,8 @@ public class EnemyPatroling : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
+    public GameObject parent;
+    public GameObject enemy;
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
@@ -34,6 +36,7 @@ public class EnemyPatroling : MonoBehaviour
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
         {
             currentPoint = pointA.transform;
+
         }
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
         {
@@ -47,5 +50,8 @@ public class EnemyPatroling : MonoBehaviour
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
+        Gizmos.color = Color.forestGreen;
+        Gizmos.DrawSphere(parent.transform.position, 0.3f);
+        
     }
 }
