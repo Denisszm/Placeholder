@@ -37,7 +37,7 @@ public class MenuScript : MonoBehaviour
         }
         
         //Select Input
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
             if (CurrentArrowPosition == 0)
             {
