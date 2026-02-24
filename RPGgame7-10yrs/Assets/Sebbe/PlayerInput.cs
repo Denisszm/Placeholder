@@ -6,8 +6,10 @@ public class PlayerInput : MonoBehaviour
     public float movespeed = 10f;
     public float jumpForce = 20f;
     public bool doublejump;
-    private float jumpCutMultiplier = 0.5f; 
+    private float jumpCutMultiplier = 0.5f;
 
+
+    [Header("GroundSettings")]
     public Transform groundCheck;
     public float checkRadius = 0.2f;
     public LayerMask whatIsGround;
@@ -18,6 +20,7 @@ public class PlayerInput : MonoBehaviour
     private float originalGravity; //Original gravity scale, saves on launch
 
     // DASH VARIABLES
+   
     private float dashCD = 0f;
     private float dashDuration = 0.15f; // How long the dash lasts
     private float dashTimer = 0f;      //Internal timer for the burst
