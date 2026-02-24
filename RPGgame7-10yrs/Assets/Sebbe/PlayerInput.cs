@@ -6,7 +6,7 @@ public class PlayerInput : MonoBehaviour
     public float movespeed = 10f;
     public float jumpForce = 20f;
     public bool doublejump;
-    private float jumpCutMultiplier = 0.5f;
+    private float jumpCutMultiplier = 0.5f; 
 
     public Transform groundCheck;
     public float checkRadius = 0.2f;
@@ -15,7 +15,13 @@ public class PlayerInput : MonoBehaviour
     private int jumpcount;
     private bool isGrounded;
     private float horizontalInput;
-    private bool dashCD = true;
+    private float originalGravity; //Original gravity scale, saves on launch
+
+    // DASH VARIABLES
+    private float dashCD = 0f;
+    private float dashDuration = 0.15f; // How long the dash lasts
+    private float dashTimer = 0f;      //Internal timer for the burst
+    public float dashMultiplier = 3f;  //How much faster the dash is
 
     private KeyCode MoveLeft, MoveRight, Jump, Dash;
     public int PlayerNumber;
@@ -23,8 +29,8 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        // Fryser rotation så spelaren inte trillar framåt
         rb.freezeRotation = true;
+        originalGravity = rb.gravityScale;
 
         if (PlayerNumber == 1)
         {
@@ -38,65 +44,59 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        // 1. Samla input i Update
+        // Gather Input
         horizontalInput = 0;
         if (Input.GetKey(MoveRight)) horizontalInput = 1;
         if (Input.GetKey(MoveLeft)) horizontalInput = -1;
-        
 
-        // 2. Markkontroll
+        //Cooldown Timers
+        if (dashCD > 0) dashCD -= Time.deltaTime;
+        if (dashTimer > 0) dashTimer -= Time.deltaTime;
+
+        //Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
             jumpcount = doublejump ? 2 : 1;
         }
 
-        // 3. Hopp (GetKeyDown måste vara i Update för att inte missas)
+        //Jump Logic
         if (Input.GetKeyDown(Jump) && jumpcount > 0)
         {
-            
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpcount--;
         }
-        if (Input.GetKeyUp(Jump))
+        //If player only taps jump, falls faster
+        if (Input.GetKeyUp(Jump) && rb.linearVelocity.y > 0)
         {
-            // Om vi rör oss uppåt (velocity.y > 0)
-            if (rb.linearVelocity.y > 0)
-            {
-                // Multiplicera nuvarande Y-fart med t.ex. 0.5. 
-                // Detta gör att man "tappar suget" uppåt och börjar falla tidigare.
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
-            }
-        }
-        if (dashCD)
-        {
-            if (Input.GetKeyDown(Dash))
-            {
-                rb.linearVelocityX = rb.linearVelocityX * 2;
-                dashCD = false;
-                System.Threading.Thread.Sleep(2000);
-                dashCD = true;
-            }
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
         }
 
+        //Trigger Dash
+        if (Input.GetKeyDown(Dash) && dashCD <= 0)
+        {
+            rb.gravityScale = 0;
+            rb.linearVelocityY = 0f;
+            dashTimer = dashDuration; // Start the burst
+            dashCD = 2f;    // Reset the 2s cooldown
+            
+        }
     }
 
     void FixedUpdate()
     {
-        // 4. Applicera rörelse i FixedUpdate (Fysik-vänligt)
-        // Om ingen knapp trycks, sätt X till 0 direkt för att eliminera "back-momentum"
-        if (horizontalInput == 0)
+        // If we are currently in the a dash
+        if (dashTimer > 0)
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            // Lock movement to dash speed
+            rb.linearVelocity = new Vector2(horizontalInput * movespeed * dashMultiplier, rb.linearVelocity.y);
         }
         else
         {
+            // Normal movement & gravity
+            rb.gravityScale = originalGravity;
             rb.linearVelocity = new Vector2(horizontalInput * movespeed, rb.linearVelocity.y);
         }
-        
     }
-
-    
 }
