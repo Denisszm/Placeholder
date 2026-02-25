@@ -443,30 +443,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &807558226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3400855303472528646, guid: 6882e73b47de8be4b82f9d8ad4a64c46, type: 3}
-  m_PrefabInstance: {fileID: 4154837512385418264}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &807558231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4159314086497671844, guid: 6882e73b47de8be4b82f9d8ad4a64c46, type: 3}
   m_PrefabInstance: {fileID: 4154837512385418264}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &807558232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807558226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1963897b0b74af74f92666a386cec3bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player2: {fileID: 1141323135}
-  maxDistance: 20
 --- !u!1 &1065901340
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,33 +602,14 @@ MonoBehaviour:
   player2: {fileID: 807558231}
   offset: {x: 0, y: 0, z: -10}
   smoothSpeed: 0.125
-  minSize: 7
+  minSize: 5
   maxSize: 10
   zoomSpeed: 50
---- !u!1 &1141323130 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8392970470032309469, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
-  m_PrefabInstance: {fileID: 8558795744470022904}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1141323135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8431535439903733229, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
   m_PrefabInstance: {fileID: 8558795744470022904}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1141323136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141323130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1963897b0b74af74f92666a386cec3bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player2: {fileID: 807558231}
-  maxDistance: 20
 --- !u!1 &1553065525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,13 +986,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6161140019415219481, guid: 6882e73b47de8be4b82f9d8ad4a64c46, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1141323135}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3400855303472528646, guid: 6882e73b47de8be4b82f9d8ad4a64c46, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 807558232}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882e73b47de8be4b82f9d8ad4a64c46, type: 3}
 --- !u!1001 &8558795744470022904
 PrefabInstance:
@@ -1040,6 +1003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8035283707171573322, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 807558231}
     - target: {fileID: 8392970470032309469, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1087,10 +1054,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8392970470032309469, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1141323136}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

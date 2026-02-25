@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3672235480704329654}
   - component: {fileID: 902829958224358330}
   - component: {fileID: 5280813384875434819}
+  - component: {fileID: 6161140019415219481}
   m_Layer: 7
   m_Name: Player 2
   m_TagString: Player
@@ -106,7 +107,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2.1
+  m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: 94fa8184b726c6f428629dfd723d5321, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -167,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223622cbdab72cb4f9028b975a0eb8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
-  jumpForce: 9
+  movespeed: 13
+  jumpForce: 15
   doublejump: 1
   groundCheck: {fileID: 5537414495343710470}
   checkRadius: 0.1
@@ -177,6 +178,20 @@ MonoBehaviour:
     m_Bits: 72
   dashMultiplier: 3
   PlayerNumber: 2
+--- !u!114 &6161140019415219481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400855303472528646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1963897b0b74af74f92666a386cec3bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2: {fileID: 0}
+  maxDistance: 20
 --- !u!1 &6766780452833282052
 GameObject:
   m_ObjectHideFlags: 0
