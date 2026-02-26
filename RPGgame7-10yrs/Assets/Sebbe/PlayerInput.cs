@@ -34,9 +34,11 @@ public class PlayerInput : MonoBehaviour
     [Header("AttackSettings")]
     public string WeaponType;
     private float MeleeDuration;
-    private float ArcherDuration;
-    private float MageDuration;
+    
+   
+    public Transform projectileSpawner;
     public GameObject MeleeAttack;
+    public GameObject MageAttack;
    
     public float AttackCD;
 
@@ -72,14 +74,31 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         // Gather Input
+       
         horizontalInput = 0;
-        if (Input.GetKey(MoveRight)) horizontalInput = 1;
-        if (Input.GetKey(MoveLeft)) horizontalInput = -1;
+
+        if (Input.GetKey(MoveRight))
+        {
+            horizontalInput = 1;
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else if (Input.GetKey(MoveLeft))
+        {
+            horizontalInput = -1;
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
 
         //Cooldown Timers
         if (dashCD > 0) dashCD -= Time.deltaTime;
         if (dashTimer > 0) dashTimer -= Time.deltaTime;
-        if (AttackCD > 0) AttackCD -= Time.deltaTime;
+        if (AttackCD > 0)
+        {
+            AttackCD -= Time.deltaTime;
+        }
+        else
+        {
+            AttackCD = 0; // Keep it at exactly 0 when finished
+        }
         if (MeleeDuration > 0) MeleeDuration -= Time.deltaTime;
 
         //Ground Check
@@ -130,7 +149,11 @@ public class PlayerInput : MonoBehaviour
             }
             else if (WeaponType == "mage")
             {
-
+                if (MageAttack != null && projectileSpawner != null)
+                {
+                    AttackCD = 0.5f;
+                    Instantiate(MageAttack, projectileSpawner.position, projectileSpawner.rotation);
+                }
             }
         }
         if (MeleeDuration <= 0)
