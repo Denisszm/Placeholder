@@ -13,6 +13,8 @@ public class PlayerInput : MonoBehaviour
     public Transform groundCheck;
     public float checkRadius = 0.2f;
     public LayerMask whatIsGround;
+    public LayerMask whatIsEnemy;
+   
 
     private int jumpcount;
     private bool isGrounded;
@@ -26,8 +28,17 @@ public class PlayerInput : MonoBehaviour
     private float dashTimer = 0f;      //Internal timer for the burst
     public float dashMultiplier = 3f;  //How much faster the dash is
 
-    private KeyCode MoveLeft, MoveRight, Jump, Dash;
+    private KeyCode MoveLeft, MoveRight, Jump, Dash, Attack;
     public int PlayerNumber;
+
+    [Header("AttackSettings")]
+    public string WeaponType;
+    private float MeleeDuration;
+    private float ArcherDuration;
+    private float MageDuration;
+    public GameObject MeleeAttack;
+   
+    public float AttackCD;
 
     void Start()
     {
@@ -37,11 +48,24 @@ public class PlayerInput : MonoBehaviour
 
         if (PlayerNumber == 1)
         {
-            MoveLeft = KeyCode.A; MoveRight = KeyCode.D; Jump = KeyCode.W; Dash = KeyCode.LeftShift;
+            MoveLeft = KeyCode.A; MoveRight = KeyCode.D; Jump = KeyCode.W; Dash = KeyCode.LeftShift; Attack = KeyCode.Q;
         }
         else
         {
-            MoveLeft = KeyCode.J; MoveRight = KeyCode.L; Jump = KeyCode.I; Dash = KeyCode.RightShift;
+            MoveLeft = KeyCode.J; MoveRight = KeyCode.L; Jump = KeyCode.I; Dash = KeyCode.RightShift; Attack = KeyCode.O;
+        }
+
+        if (WeaponType == "melee")
+        {
+
+        }
+        else if (WeaponType == "archer")
+        {
+
+        }
+        else if (WeaponType == "mage")
+        {
+
         }
     }
 
@@ -55,6 +79,8 @@ public class PlayerInput : MonoBehaviour
         //Cooldown Timers
         if (dashCD > 0) dashCD -= Time.deltaTime;
         if (dashTimer > 0) dashTimer -= Time.deltaTime;
+        if (AttackCD > 0) AttackCD -= Time.deltaTime;
+        if (MeleeDuration > 0) MeleeDuration -= Time.deltaTime;
 
         //Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
@@ -84,6 +110,45 @@ public class PlayerInput : MonoBehaviour
             dashTimer = dashDuration; // Start the burst
             dashCD = 2f;    // Reset the 2s cooldown
             
+        }
+        //Attack logic
+        if (Input.GetKeyDown(Attack) && AttackCD <= 0)
+        {
+            if (WeaponType == "melee")
+            {
+                MeleeDuration = 0.1f;
+                AttackCD = 0.2f;
+                MeleeAttack.SetActive(true);
+                
+
+
+
+            }
+            else if (WeaponType == "archer")
+            {
+
+            }
+            else if (WeaponType == "mage")
+            {
+
+            }
+        }
+        if (MeleeDuration <= 0)
+        {
+            MeleeAttack.SetActive(false);
+        }
+       
+
+
+       
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (((1 << collision.gameObject.layer) & whatIsEnemy) != 0)
+        {
+            Debug.Log("Hit an enemy: " + collision.name);
+            // Do damage here! 
         }
     }
 
