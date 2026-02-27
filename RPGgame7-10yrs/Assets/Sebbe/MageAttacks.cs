@@ -24,6 +24,7 @@ public class MageAttacks : MonoBehaviour
         if (((1 << collision.gameObject.layer) & whatisEnemy) != 0)
         {
             Debug.Log("Hit an enemy: " + collision.name);
+            Destroy(gameObject);
             // Do damage here! 
         }
     }
