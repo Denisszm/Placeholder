@@ -10,8 +10,13 @@ using System.Diagnostics.Eventing.Reader;
 [System.Serializable]
 class Connections
 {
-    public int startPoint;
-    public int endPoint;
+    public int from;
+    public int to;
+    public Connections( int  from, int to)
+    {
+        this.from = from;
+        this.to = to;
+    }
 }
 class StateBox
 {
@@ -26,11 +31,7 @@ public class FSM : EditorWindow
     private List<Connections> connections = new List<Connections>();
     private bool isDragging = false;
     private Vector2 mouseDownPosition;
-#nullable enable annotations //nulls
-    private string? lastCardName;
-    private string? newCardName;
-    private int? lastCardIndex;
-    private int? newCardIndex;
+    private int selectedState = -1;
 
     [MenuItem("Window/FSM")]
     public static void ShowExample()
@@ -53,18 +54,16 @@ public class FSM : EditorWindow
 
         for (int i = 0; i < connections.Count; i++)
         {
-            if (lastCardIndex != null && newCardIndex != null && Event.current.type == EventType.Repaint)
-            {
                 Debug.Log("Entered if statement");
                 Handles.BeginGUI();
-                Vector3 startPos = states[connections[i].startPoint].rect.center;
-                Vector3 lastPos = states[connections[i].endPoint].rect.center;
+                Vector3 startPos = states[connections[i].from].rect.center;
+                Vector3 lastPos = states[connections[i].to].rect.center;
 
                 Handles.DrawLine(startPos, lastPos, 2f);
                 Debug.Log("Created Line");
 
                 Handles.EndGUI();
-            }
+            
         }
 
         for (int i = 0; i < states.Count; i++)
@@ -108,31 +107,24 @@ public class FSM : EditorWindow
             }
             if (e.type == EventType.MouseUp && dragIndex == i)
             {
-                lastCardIndex = null;
-                newCardIndex = null;
                 if (!isDragging)
                 {
-                    if (lastCardIndex == null)
+                    if (selectedState == -1)
                     {
-                        lastCardIndex = i;
+                        selectedState  = i;
                         Debug.Log($"Selected First: {states[i].name} {i}");
                     }
-                    else if (lastCardIndex != i && lastCardIndex != null)
+                    else if (selectedState != i)
                     {
-                        newCardIndex = i;
+                        connections.Add(new Connections(selectedState, i));
                         Debug.Log($"Selected Second: {states[i].name} {i}");
+                        selectedState = -1;
                     }
-                    connections.Add(new Connections
-                    {
-                        startPoint = lastCardIndex.Value,
-                        endPoint = newCardIndex.Value
-                    });
-                    
                 }
                 dragIndex = -1;
+                isDragging = false;
             }
         }
-        Repaint();
     }
     
 }
