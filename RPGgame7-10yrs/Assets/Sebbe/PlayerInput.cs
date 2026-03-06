@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    private Animator playersprite;
     private Rigidbody2D rb;
     public float movespeed = 10f;
     public float jumpForce = 20f;
@@ -47,25 +48,36 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playersprite = GetComponent<Animator>();
         rb.freezeRotation = true;
         originalGravity = rb.gravityScale;     
     }
 
     void Update()
     {
-        //GATHER INPUTS
-        //Changes with playernumber
+        // 1. GATHER INPUTS
         string pNum = PlayerNumber.ToString();
-
+        // GetAxisRaw returns exactly -1, 0, or 1
         horizontalInput = Input.GetAxisRaw("Horizontal" + pNum);
 
-        //HANDLE ROTATION & DIRECTION
-        if (horizontalInput > 0.1f) //Moving Right
+        // 2. ANIMATION UPDATE (Moved this up for better tracking)
+        // We use Mathf.Abs so that moving left (-1) still sends "1" to the Speed parameter
+        float moveSpeedForAnimator = Mathf.Abs(horizontalInput);
+        playersprite.SetFloat("Speed", moveSpeedForAnimator);
+
+        // This will help you see if the code is actually "hearing" your keyboard
+        if (moveSpeedForAnimator > 0)
+        {
+            Debug.Log("Player " + pNum + " is moving! Speed value: " + moveSpeedForAnimator);
+        }
+
+        // 3. HANDLE ROTATION & DIRECTION
+        if (horizontalInput > 0.1f)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
             rotation = Quaternion.Euler(0, 0, 15);
         }
-        else if (horizontalInput < -0.1f) //Moving Left
+        else if (horizontalInput < -0.1f)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
             rotation = Quaternion.Euler(0, 0, 165);
@@ -138,6 +150,9 @@ public class PlayerInput : MonoBehaviour
         {
             MeleeAttack.SetActive(false);
         }
+        playersprite.SetFloat("Speed", Mathf.Abs(horizontalInput));
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
