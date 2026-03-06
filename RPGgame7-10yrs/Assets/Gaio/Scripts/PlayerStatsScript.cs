@@ -12,7 +12,7 @@ public class PlayerStatsScript : MonoBehaviour
 
     //PlayerUI
     public Image hpBar;
-    public TextMeshPro scoreText;
+    public TextMeshProUGUI scoreText;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -55,7 +55,7 @@ public class PlayerStatsScript : MonoBehaviour
 
     void UpdateHealth()
     {
-        float percent = currentHP / maxHP;
+        float percent = (float)currentHP / maxHP;
         hpBar.fillAmount = percent;
     }
 
