@@ -14,6 +14,7 @@ public class PauseScript : MonoBehaviour
     void Start()
     {
         IsPaused = false;
+        Time.timeScale = 1f;
     }
 
    

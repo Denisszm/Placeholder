@@ -13,12 +13,18 @@ public class PlayerStatsScript : MonoBehaviour
     //PlayerUI
     public Image hpBar;
     public TextMeshProUGUI scoreText;
+    public SpriteRenderer playerSprite;
+    public Image playerIcon;
+    public Image itemSprite;
+    public Image itemIcon;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHP = maxHP;
+
+        playerIcon.sprite = playerSprite.sprite;
     }
 
     public void TakeDamage(int amount)
@@ -65,7 +71,7 @@ public class PlayerStatsScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         TakeDamage(1);
         AddScore(1);
