@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a9d284dab920a7d45ab55ea3ffe026b9
+guid: 8c6a513ad02611c42945430eebf0c022
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8686268927748018428
-    second: "Sigmabackhourndgapgla\xE5sfjaiw+r_0"
+      213: 3733607229926853673
+    second: Robe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sigmabackhourndgapgla\xE5sfjaiw+r_0"
+      name: Robe_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 7
+        y: 1
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf01fe56193db8870800000000000000
-      internalID: 8686268927748018428
+      spriteID: 92cce9e7eff60d330800000000000000
+      internalID: 3733607229926853673
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Sigmabackhourndgapgla\xE5sfjaiw+r_0": 8686268927748018428
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

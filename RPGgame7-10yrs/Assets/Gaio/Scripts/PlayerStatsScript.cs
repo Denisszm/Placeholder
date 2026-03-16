@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class PlayerStatsScript : MonoBehaviour
 {
     //PlayerStats
+    public CharacterStats stats;
+
     public int maxHP;
     public int currentHP;
 
@@ -19,9 +21,21 @@ public class PlayerStatsScript : MonoBehaviour
     public Image itemIcon;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (stats.Health == CharacterStats.HealthEnum.Tank)
+        {
+            maxHP = 10000;
+        }
+        else if (stats.Health == CharacterStats.HealthEnum.Average)
+        {
+            maxHP = 7500;
+        }
+        else if (stats.Health == CharacterStats.HealthEnum.Weak)
+        {
+            maxHP = 5000;
+        }
+
         currentHP = maxHP;
 
         playerIcon.sprite = playerSprite.sprite;

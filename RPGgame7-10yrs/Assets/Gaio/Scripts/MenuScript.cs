@@ -39,7 +39,7 @@ public class MenuScript : MonoBehaviour
         PressTimer -= Time.deltaTime;
         if (PressTimer > 1)
         {
-            Press.text = "Press Any Key to Continue!";
+            Press.text = "Press Any Key to Continue";
         }
         else if(PressTimer > 0)
         {
@@ -77,10 +77,12 @@ public class MenuScript : MonoBehaviour
         {
             if (CurrentArrowPosition == 0)
             {
+                GameManagerScript.instance.playerCount = 1;
                 SceneManager.LoadScene(3);
             }
             else if (CurrentArrowPosition == 1)
             {
+                GameManagerScript.instance.playerCount = 2;
                 SceneManager.LoadScene(3);
             }
             else if (CurrentArrowPosition == 2)
