@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 4676517525544699281}
   - component: {fileID: 1995848827751298156}
   - component: {fileID: 8035283707171573322}
-  - component: {fileID: 3565382961811160266}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -236,6 +235,8 @@ MonoBehaviour:
   movespeed: 13
   jumpForce: 15
   doublejump: 1
+  dash: 0
+  wallclimb: 0
   groundCheck: {fileID: 1202119317021758155}
   checkRadius: 0.1
   whatIsGround:
@@ -266,28 +267,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player2: {fileID: 0}
   maxDistance: 20
---- !u!95 &3565382961811160266
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392970470032309469}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 67d82a8be384a9e4584cda1b2f110df5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9200750373413654621
 GameObject:
   m_ObjectHideFlags: 0

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bliblibla_0: 1101764036858745695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

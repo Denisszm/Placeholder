@@ -14,17 +14,21 @@ public class PlayerInput : MonoBehaviour
 
     public float jumpForce = 20f;
 
-    public bool doublejump;
+    
 
     private float jumpCutMultiplier = 0.5f;
+    [Header("player bools")]
+
+    public bool doublejump;
+    public bool dash;
+    public bool wallclimb;
 
 
-
-
-
-    [Header("GroundSettings")]
+    [Header("EnviormentSettings")]
 
     public Transform groundCheck;
+
+    public Transform wallCheck;
 
     public float checkRadius = 0.2f;
 
@@ -32,17 +36,25 @@ public class PlayerInput : MonoBehaviour
 
     public LayerMask whatIsEnemy;
 
+    public LayerMask whatIsWall;
+
+    public CapsuleCollider2D playerHitbox;
+
 
 
 
 
     private int jumpcount;
 
+    private bool canClimb;
+
     private bool isGrounded;
 
     private float horizontalInput;
 
     private float originalGravity; //Original gravity scale, saves on launch
+
+    private bool isClimbing;
 
 
 
@@ -167,10 +179,26 @@ public class PlayerInput : MonoBehaviour
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
 
         {
-
+            canClimb = true;
             jumpcount = doublejump ? 2 : 1;
 
         }
+
+        isClimbing = Physics2D.OverlapCircle(wallCheck.position, 0.5f, whatIsWall);
+
+        if (isClimbing && wallclimb && horizontalInput != 0 && canClimb)
+        {
+
+            rb.gravityScale = 0;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 10f);
+
+        }
+        else if(isClimbing && wallclimb && canClimb)
+        {
+            canClimb = false;
+        }
+
+
 
 
 
@@ -202,7 +230,7 @@ public class PlayerInput : MonoBehaviour
 
         //DASH LOGIC
 
-        if (Input.GetButtonDown("Dash" + pNum) && dashCD <= 0)
+        if (Input.GetButtonDown("Dash" + pNum) && dashCD <= 0 && dash)
 
         {
 
