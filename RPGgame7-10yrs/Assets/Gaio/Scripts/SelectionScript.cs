@@ -17,6 +17,9 @@ public class SelectionScript : MonoBehaviour
     public Vector3 singlePosition;
     public Vector3 multiPosition;
 
+    public Vector3 player1Position;
+    public Vector3 player2Position;
+
     private bool firstIsChoosing;
     private bool secondIsChoosing;
 
@@ -45,13 +48,15 @@ public class SelectionScript : MonoBehaviour
     // Update is called once per frame
     void SingleUpdate()
     {
-        LoadCharacter();
+        ShowCharacter();
+        
     }
     void MultiUpdate()
     {
-        LoadCharacter();
+        ShowCharacter();
+        
     }
-    void LoadCharacter()
+    void ShowCharacter()
     {
         for (int i = 0; i < characters.Count; i++)
         {
@@ -64,6 +69,14 @@ public class SelectionScript : MonoBehaviour
                 characters[i].gameObject.SetActive(false);
             }
         }
+    }
+    void SingleCharacterStats()
+    {
+
+    }
+    void MultiCharacterStats()
+    {
+        
     }
     void PlayerInput()
     {
@@ -81,9 +94,12 @@ public class SelectionScript : MonoBehaviour
             {
                 firstIsChoosing = false;
                 secondIsChoosing = true;
+
+                GameManagerScript.instance.player1 = characters[currentCharacter];
             }
             else
             {
+                GameManagerScript.instance.player2 = characters[currentCharacter];
                 SceneManager.LoadScene(4);
             }
         }

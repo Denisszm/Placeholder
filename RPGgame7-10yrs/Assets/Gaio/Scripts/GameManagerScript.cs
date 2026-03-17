@@ -6,6 +6,9 @@ public class GameManagerScript : MonoBehaviour
 
     public int playerCount;
 
+    public GameObject player1;
+    public GameObject player2;
+
     void Awake()
     {
         if (instance == null)
