@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SelectionScript : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class SelectionScript : MonoBehaviour
 
     public Sprite b1;
     public Sprite b2;
+
+    public GameObject player1Icon;
+    public GameObject player2Icon;
 
     public List<GameObject> characters;
     private int currentCharacter;
@@ -22,6 +26,11 @@ public class SelectionScript : MonoBehaviour
 
     private bool firstIsChoosing;
     private bool secondIsChoosing;
+
+    public Image p1ItemImage;
+    public Image p2ItemImage;
+    public Text p1ItemText;
+    public Text p2ItemText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,12 +58,12 @@ public class SelectionScript : MonoBehaviour
     void SingleUpdate()
     {
         ShowCharacter();
-        
+        UpdateSingleStats();
     }
     void MultiUpdate()
     {
         ShowCharacter();
-        
+        UpdateMultiStats();
     }
     void ShowCharacter()
     {
@@ -70,13 +79,26 @@ public class SelectionScript : MonoBehaviour
             }
         }
     }
-    void SingleCharacterStats()
+    void UpdateSingleStats()
     {
+        player1Icon.GetComponent<SpriteRenderer>().sprite = characters[currentCharacter].GetComponent<SpriteRenderer>().sprite;
 
+        p1ItemImage.sprite = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Image;
+        p1ItemText.text = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Description;
     }
-    void MultiCharacterStats()
+    void UpdateMultiStats()
     {
-        
+        if (firstIsChoosing)
+        {
+            UpdateSingleStats();
+        }
+        else if (secondIsChoosing)
+        {
+            player2Icon.GetComponent<SpriteRenderer>().sprite = characters[currentCharacter].GetComponent<SpriteRenderer>().sprite;
+
+            p2ItemImage.sprite = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Image;
+            p2ItemText.text = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Description;
+        }
     }
     void PlayerInput()
     {
