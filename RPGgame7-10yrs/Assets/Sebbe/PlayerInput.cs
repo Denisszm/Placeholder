@@ -5,11 +5,25 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 
 {
+    // Item variables
 
+    private float bonusscoremult;
+    private float dashcdreduction;
+    private float bonusdef;
+    private float bonusatk;
+    private float bonusdashdist;
+    private bool shield;
+    private bool ragemode;
+    private float ragecd;
+    private float ragedur;
+
+    [Header("ScoreStuff")]
+    public float scoremultiplier;
     
 
     private Rigidbody2D rb;
 
+    [Header("MoveSpeeds")]
     public float movespeed = 10f;
 
     public float jumpForce = 20f;
@@ -72,7 +86,7 @@ public class PlayerInput : MonoBehaviour
 
 
 
-    private KeyCode MoveLeft, MoveRight, Jump, Dash, Attack;
+    private KeyCode MoveLeft, MoveRight, Jump, Dash, Attack, Rage;
 
     public int PlayerNumber;
 
@@ -83,6 +97,8 @@ public class PlayerInput : MonoBehaviour
     public string WeaponType;
 
     private float MeleeDuration;
+
+    public float AttackDamage;
 
 
 
@@ -96,7 +112,7 @@ public class PlayerInput : MonoBehaviour
 
     public GameObject ArcherAttack;
 
-
+    private bool backtonormal;
 
     public float AttackCD;
 
@@ -114,6 +130,41 @@ public class PlayerInput : MonoBehaviour
 
         originalGravity = rb.gravityScale;
 
+        string itemtype = gameObject.GetComponent<ItemStatsScript>().Item.Item.ToString();
+
+        if (itemtype == "Bag")
+        {
+            bonusscoremult =+ 0.5f;
+        }
+        else if (itemtype == "Book")
+        {
+            dashcdreduction = 0.1f;
+        }
+        else if (itemtype == "Boots")
+        {
+            doublejump = true;
+        }
+        else if (itemtype == "Helmet")
+        {
+            bonusdef = 0.5f;
+        }
+        else if (itemtype == "Poison")
+        {
+            bonusatk = 0.5f;
+        }
+        else if (itemtype == "Robe")
+        {
+            bonusdashdist = 0.5f;
+        }
+        else if (itemtype == "Shield")
+        {
+            shield = true;
+        }
+        else if (itemtype == "Skull")
+        {
+            ragemode = true;
+        }
+
     }
 
 
@@ -121,7 +172,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
 
     {
-
+        ragemode = true;
         //GATHER INPUTS
 
         //Changes with playernumber
@@ -169,6 +220,8 @@ public class PlayerInput : MonoBehaviour
         else AttackCD = 0;
 
         if (MeleeDuration > 0) MeleeDuration -= Time.deltaTime;
+        if (ragecd > 0) ragecd -= Time.deltaTime;
+        if (ragedur > 0) ragedur -= Time.deltaTime;
 
 
 
@@ -238,10 +291,26 @@ public class PlayerInput : MonoBehaviour
 
             rb.linearVelocityY = 0f;
 
-            dashTimer = dashDuration;
+            dashTimer = dashDuration + bonusdashdist;
 
-            dashCD = 2f;
+            dashCD = 2f - dashcdreduction;
 
+        }
+
+        //RAGE MODE LOGIC
+        if (Input.GetButtonDown("Rage" + pNum) && ragemode && ragecd !> 0)
+        {
+            AttackDamage =+ 1f;
+            movespeed =+ 1f;
+            ragedur = 5f;
+
+            backtonormal = true;
+        }
+        if (ragedur <= 0 && backtonormal)
+        {
+            AttackDamage -= 1f;
+            movespeed -= 1f;
+            backtonormal = false;
         }
 
 
@@ -310,7 +379,7 @@ public class PlayerInput : MonoBehaviour
 
 
 
-
+        Debug.Log($"speed = {movespeed} damage = {AttackDamage}");
 
     }
 
