@@ -32,6 +32,14 @@ public class SelectionScript : MonoBehaviour
     public Text p1ItemText;
     public Text p2ItemText;
 
+    public Text p1DamageText;
+    public Text p1SpeedText;
+    public Text p1HealthText;
+
+    public Text p2DamageText;
+    public Text p2SpeedText;
+    public Text p2HealthText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -85,6 +93,10 @@ public class SelectionScript : MonoBehaviour
 
         p1ItemImage.sprite = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Image;
         p1ItemText.text = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Description;
+
+        p1DamageText.text = $"Damage: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Damage.ToString()}";
+        p1SpeedText.text = $"Speed: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Speed.ToString()}";
+        p1HealthText.text = $"Health: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Health.ToString()}";
     }
     void UpdateMultiStats()
     {
@@ -94,10 +106,16 @@ public class SelectionScript : MonoBehaviour
         }
         else if (secondIsChoosing)
         {
+            player2Icon.gameObject.SetActive(true);
             player2Icon.GetComponent<SpriteRenderer>().sprite = characters[currentCharacter].GetComponent<SpriteRenderer>().sprite;
 
+            p2ItemImage.gameObject.SetActive(true);
             p2ItemImage.sprite = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Image;
             p2ItemText.text = characters[currentCharacter].GetComponent<ItemStatsScript>().Item.Description;
+
+            p2DamageText.text = $"Damage: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Damage.ToString()}";
+            p2SpeedText.text = $"Speed: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Speed.ToString()}";
+            p2HealthText.text = $"Health: {characters[currentCharacter].GetComponent<PlayerStatsScript>().stats.Health.ToString()}";
         }
     }
     void PlayerInput()
@@ -114,10 +132,17 @@ public class SelectionScript : MonoBehaviour
         {
             if (firstIsChoosing)
             {
-                firstIsChoosing = false;
-                secondIsChoosing = true;
-
                 GameManagerScript.instance.player1 = characters[currentCharacter];
+
+                if (GameManagerScript.instance.playerCount == 1)
+                {
+                    SceneManager.LoadScene(4);
+                }
+                else
+                {
+                    firstIsChoosing = false;
+                    secondIsChoosing = true;
+                }
             }
             else
             {
