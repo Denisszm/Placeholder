@@ -15,7 +15,6 @@ public class PlayerStatsScript : MonoBehaviour
     //PlayerUI
     public Image hpBar;
     public TextMeshProUGUI scoreText;
-    public SpriteRenderer playerSprite;
     public Image playerIcon;
     public Image itemSprite;
     public Image itemIcon;
@@ -38,7 +37,7 @@ public class PlayerStatsScript : MonoBehaviour
 
         currentHP = maxHP;
 
-        playerIcon.sprite = playerSprite.sprite;
+        playerIcon.sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
     }
 
     public void TakeDamage(int amount)
