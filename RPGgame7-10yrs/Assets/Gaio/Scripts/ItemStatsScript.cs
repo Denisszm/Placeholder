@@ -7,8 +7,7 @@ public class ItemStatsScript : MonoBehaviour
     public string description;
     public Sprite sprite;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
         description = Item.Description;
         sprite = Item.Image;
