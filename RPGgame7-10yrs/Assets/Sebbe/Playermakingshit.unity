@@ -798,6 +798,26 @@ CapsuleCollider2D:
   m_CorrespondingSourceObject: {fileID: 4676517525544699281, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
   m_PrefabInstance: {fileID: 8558795744470022904}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1181813943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8392970470032309469, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
+  m_PrefabInstance: {fileID: 8558795744470022904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1181813948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181813943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 0}
+  description: 
+  sprite: {fileID: 0}
 --- !u!1 &1553065525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1244,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1995848827751298156, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
+      propertyPath: doublejump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995848827751298156, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
       propertyPath: playerHitbox
       value: 
       objectReference: {fileID: 1141323138}
@@ -1298,7 +1322,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8392970470032309469, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1181813948}
   m_SourcePrefab: {fileID: 100100000, guid: 44cf2c5f14a3c5448a105f3145f6b482, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
