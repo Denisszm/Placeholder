@@ -117,6 +117,9 @@ public class PlayerInput : MonoBehaviour
     public float AttackCD;
 
     Quaternion rotation;
+    public enum ItemEnum { Bag, Book, Boots, Helmet, Poison, Robe, Shield, Skull }
+    public ItemEnum Item;
+
 
 
 
@@ -130,40 +133,87 @@ public class PlayerInput : MonoBehaviour
 
         originalGravity = rb.gravityScale;
 
-        string itemtype = gameObject.GetComponent<ItemStatsScript>().Item.Item.ToString();
+        Item = ItemEnum.Robe;
 
-        if (itemtype == "Bag")
-        {
-            bonusscoremult =+ 0.5f;
-        }
-        else if (itemtype == "Book")
-        {
-            dashcdreduction = 0.1f;
-        }
-        else if (itemtype == "Boots")
+
+        if (Item == ItemEnum.Boots)
         {
             doublejump = true;
+           
         }
-        else if (itemtype == "Helmet")
+        else if (Item == ItemEnum.Bag)
         {
-            bonusdef = 0.5f;
+            // Increases score multiplier
+            bonusscoremult += 0.5f;
         }
-        else if (itemtype == "Poison")
+        else if (Item == ItemEnum.Book)
         {
-            bonusatk = 0.5f;
+            // Reduces dash cooldown
+            dashcdreduction += 0.5f;
         }
-        else if (itemtype == "Robe")
+        else if (Item == ItemEnum.Helmet)
         {
-            bonusdashdist = 0.5f;
+            // Adds defensive bonus
+            bonusdef += 0.5f;
         }
-        else if (itemtype == "Shield")
+        else if (Item == ItemEnum.Poison)
         {
-            shield = true;
+            // Adds attack bonus
+            bonusatk += 0.5f;
         }
-        else if (itemtype == "Skull")
+        else if (Item == ItemEnum.Robe)
         {
+            // Increases dash distance
+            bonusdashdist += 0.1f;
+        }
+        else if (Item == ItemEnum.Shield)
+        {
+            // Enables the shield
+            bonusdef += 0.5f;
+        }
+        else if (Item == ItemEnum.Skull)
+        {
+            // Enables ragemode
             ragemode = true;
         }
+
+        /* string itemtype = gameObject.GetComponent<ItemStatsScript>().Item.Item.ToString();
+
+
+
+         if (itemtype == "Bag")
+         {
+             bonusscoremult =+ 0.5f;
+         }
+         else if (itemtype == "Book")
+         {
+             dashcdreduction = 0.1f;
+         }
+         else if (itemtype == "Boots")
+         {
+             doublejump = true;
+         }
+         else if (itemtype == "Helmet")
+         {
+             bonusdef = 0.5f;
+         }
+         else if (itemtype == "Poison")
+         {
+             bonusatk = 0.5f;
+         }
+         else if (itemtype == "Robe")
+         {
+             bonusdashdist = 0.5f;
+         }
+         else if (itemtype == "Shield")
+         {
+             shield = true;
+         }
+         else if (itemtype == "Skull")
+         {
+             ragemode = true;
+         }
+        */
 
     }
 
@@ -172,7 +222,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
 
     {
-        ragemode = true;
+        
         //GATHER INPUTS
 
         //Changes with playernumber
@@ -298,11 +348,13 @@ public class PlayerInput : MonoBehaviour
         }
 
         //RAGE MODE LOGIC
-        if (Input.GetButtonDown("Rage" + pNum) && ragemode && ragecd !> 0)
+        if (Input.GetButtonDown("Rage" + pNum) && ragemode && ragecd <= 0)
         {
-            AttackDamage =+ 1f;
-            movespeed =+ 1f;
             ragedur = 5f;
+            ragecd = 5;
+            AttackDamage += 1f;
+            movespeed += 1f;
+            
 
             backtonormal = true;
         }
@@ -379,7 +431,7 @@ public class PlayerInput : MonoBehaviour
 
 
 
-        Debug.Log($"speed = {movespeed} damage = {AttackDamage}");
+        Debug.Log($"dash is {dashDuration} normal is");
 
     }
 
