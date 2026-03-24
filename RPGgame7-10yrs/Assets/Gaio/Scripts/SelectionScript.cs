@@ -132,7 +132,7 @@ public class SelectionScript : MonoBehaviour
         {
             if (firstIsChoosing)
             {
-                GameManagerScript.instance.player1 = characters[currentCharacter];
+                GameManagerScript.instance.player1index = currentCharacter;
 
                 if (GameManagerScript.instance.playerCount == 1)
                 {
@@ -146,7 +146,7 @@ public class SelectionScript : MonoBehaviour
             }
             else
             {
-                GameManagerScript.instance.player2 = characters[currentCharacter];
+                GameManagerScript.instance.player2index = currentCharacter;
                 SceneManager.LoadScene(4);
             }
         }

@@ -1,4 +1,6 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -6,8 +8,10 @@ public class GameManagerScript : MonoBehaviour
 
     public int playerCount;
 
-    public GameObject player1;
-    public GameObject player2;
+    public int player1index;
+    public int player2index;
+
+    public List<GameObject> playerPrefabs = new List<GameObject>();
 
     void Awake()
     {
