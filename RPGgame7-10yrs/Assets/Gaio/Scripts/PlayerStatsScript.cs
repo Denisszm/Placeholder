@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,9 +20,23 @@ public class PlayerStatsScript : MonoBehaviour
     public Image itemSprite;
     public Image itemIcon;
 
-
     void Start()
     {
+        if (gameObject.GetComponent<PlayerInput>().PlayerNumber == 1)
+        {
+            hpBar = GameObject.Find("HealthBar").GetComponent<Image>();
+            scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
+            playerIcon = GameObject.Find("PlayerIcon").GetComponent<Image>();
+            Debug.Log("fuckof");
+        }
+        else if (gameObject.GetComponent<PlayerInput>().PlayerNumber == 2)
+        {
+            hpBar = GameObject.Find("HealthBar2").GetComponent<Image>();
+            scoreText = GameObject.Find("ScoreText2").GetComponent<TextMeshProUGUI>();
+            playerIcon = GameObject.Find("PlayerIcon2").GetComponent<Image>();
+        }
+
+
         if (stats.Health == CharacterStats.HealthEnum.Tank)
         {
             maxHP = 10000;

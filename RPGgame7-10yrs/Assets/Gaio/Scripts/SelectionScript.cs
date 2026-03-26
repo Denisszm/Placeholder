@@ -157,7 +157,7 @@ public class SelectionScript : MonoBehaviour
                 secondIsChoosing = false;
                 firstIsChoosing = true;
             }
-            if (firstIsChoosing)
+            else if (firstIsChoosing)
             {
                 SceneManager.LoadScene(1);
             }

@@ -367,10 +367,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223622cbdab72cb4f9028b975a0eb8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoremultiplier: 0
   movespeed: 13
   jumpForce: 15
   doublejump: 1
+  dash: 0
+  wallclimb: 0
   groundCheck: {fileID: 8008741257008653106}
+  wallCheck: {fileID: 1363963353202138056}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
@@ -378,14 +382,20 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 0
+  playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
   WeaponType: archer
+  AttackDamage: 0
   projectileSpawner: {fileID: 2666262471104656111}
   MeleeAttack: {fileID: 7685628915557548387}
   MageAttack: {fileID: 5289335829117975435, guid: 00be25c446a57c24eac93a71125f6376, type: 3}
   ArcherAttack: {fileID: 4945375390538287400, guid: 8e411d861fccefd4e9fff3904d7b0f2d, type: 3}
   AttackCD: 0
+  Item: 0
 --- !u!114 &4987682058447376328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,7 +428,6 @@ MonoBehaviour:
   score: 0
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
-  playerSprite: {fileID: 1367746892653546540}
   playerIcon: {fileID: 0}
   itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
