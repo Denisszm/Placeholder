@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e61536185c58a84fa16844a80faf476, type: 3}
+  m_Name: Bag
+  m_EditorClassIdentifier: 
+  Description: Increases amount of Gold Coins recieved
+  Image: {fileID: -6009198046271197863, guid: d5a9f6e75a290594d92b6b94134a6d2d, type: 3}
+  Item: 0
