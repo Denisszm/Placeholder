@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -94,7 +95,7 @@ public class PlayerInput : MonoBehaviour
 
     [Header("AttackSettings")]
 
-    public string WeaponType;
+    private string WeaponType;
 
     private float MeleeDuration;
 
@@ -116,24 +117,44 @@ public class PlayerInput : MonoBehaviour
 
     public float AttackCD;
 
+    
+
     Quaternion rotation;
     public enum ItemEnum { Bag, Book, Boots, Helmet, Poison, Robe, Shield, Skull }
     public ItemEnum Item;
 
+   
+    private string playerClass;
 
 
 
     void Start()
 
     {
-
-        rb = GetComponent<Rigidbody2D>();
+        playerClass = gameObject.GetComponent<PlayerStatsScript>().stats.Class.ToString();
+        if (playerClass == "Swordsman")
+        {
+            WeaponType = "melee";
+        }
+        else if (playerClass == "Archer")
+        {
+            WeaponType = "archer";
+        }
+        else if (playerClass == "Brute")
+        {
+            WeaponType = "melee";
+        }
+        else if (playerClass == "Sorcerer")
+        {
+            WeaponType = "mage";
+        }
+            rb = GetComponent<Rigidbody2D>();
 
         rb.freezeRotation = true;
 
         originalGravity = rb.gravityScale;
 
-        Item = ItemEnum.Robe;
+        // SET item == HÄR
 
 
         if (Item == ItemEnum.Boots)
@@ -168,7 +189,7 @@ public class PlayerInput : MonoBehaviour
         }
         else if (Item == ItemEnum.Shield)
         {
-            // Enables the shield
+            // Enables the shield, for now just def
             bonusdef += 0.5f;
         }
         else if (Item == ItemEnum.Skull)

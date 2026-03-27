@@ -170,12 +170,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223622cbdab72cb4f9028b975a0eb8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoremultiplier: 0
   movespeed: 13
   jumpForce: 15
   doublejump: 1
-  dash: 0
-  wallclimb: 0
+  dash: 1
+  wallclimb: 1
   groundCheck: {fileID: 5537414495343710470}
+  wallCheck: {fileID: 4159314086497671844}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
@@ -183,14 +185,19 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 256
+  playerHitbox: {fileID: 902829958224358330}
   dashMultiplier: 3
   PlayerNumber: 2
-  WeaponType: melee
+  AttackDamage: 0
   projectileSpawner: {fileID: 0}
   MeleeAttack: {fileID: 5535546524031388734}
   MageAttack: {fileID: 0}
   ArcherAttack: {fileID: 0}
   AttackCD: 0
+  Item: 0
 --- !u!114 &6161140019415219481
 MonoBehaviour:
   m_ObjectHideFlags: 0
