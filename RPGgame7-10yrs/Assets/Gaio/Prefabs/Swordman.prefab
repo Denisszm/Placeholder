@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7179645687550784648}
   - component: {fileID: 1672425373376298819}
   - component: {fileID: 6910031262250579666}
+  - component: {fileID: -9107204467740715793}
   m_Layer: 7
   m_Name: Swordman
   m_TagString: Player
@@ -223,7 +224,6 @@ MonoBehaviour:
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 458436608865482337}
   MeleeAttack: {fileID: 6066571222601332497}
@@ -264,8 +264,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &-9107204467740715793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4996805380316571176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: b5c02ab76d13d8c418123b0266ce90c6, type: 2}
+  description: Increases dash distance and decreases dash cooldown
+  sprite: {fileID: 3733607229926853673, guid: 8c6a513ad02611c42945430eebf0c022, type: 3}
 --- !u!1 &5725689183273918195
 GameObject:
   m_ObjectHideFlags: 0

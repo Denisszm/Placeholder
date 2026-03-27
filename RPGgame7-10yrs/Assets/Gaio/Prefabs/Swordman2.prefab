@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1005939777418945296}
   - component: {fileID: 5881241164280616825}
   - component: {fileID: 6955885556640796525}
+  - component: {fileID: 6401128804775460436}
   m_Layer: 7
   m_Name: Swordman2
   m_TagString: Player
@@ -222,8 +223,7 @@ MonoBehaviour:
     m_Bits: 0
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
-  PlayerNumber: 1
-  WeaponType: archer
+  PlayerNumber: 2
   AttackDamage: 0
   projectileSpawner: {fileID: 811860893630002530}
   MeleeAttack: {fileID: 8679867181666783993}
@@ -264,8 +264,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &6401128804775460436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5506385377275072890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 50ce0f4054fed5d478815926b6f54b62, type: 2}
+  description: Increases defence while standing still
+  sprite: {fileID: -6717884257390833292, guid: a83b7a1be3f83d54c9e368e4f597c8f4, type: 3}
 --- !u!1 &8541080328920887545
 GameObject:
   m_ObjectHideFlags: 0

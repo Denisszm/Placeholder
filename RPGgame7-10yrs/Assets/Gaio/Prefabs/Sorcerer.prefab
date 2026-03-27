@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1604132627216238057}
   - component: {fileID: 4822504437164016392}
   - component: {fileID: 3320405488213971669}
+  - component: {fileID: 3177583376111963404}
   m_Layer: 7
   m_Name: Sorcerer
   m_TagString: Player
@@ -357,7 +358,6 @@ MonoBehaviour:
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 1257063010006705652}
   MeleeAttack: {fileID: 3390745671598743129}
@@ -398,8 +398,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &3177583376111963404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3739825865257615171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 3599b1c698270ff4ea3453896ca5d026, type: 2}
+  description: Does nothing...
+  sprite: {fileID: 2353571312451627304, guid: b3a7201306b008f4cacd65fcee1b884b, type: 3}
 --- !u!1 &9055637160360371683
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,6 @@ public class PlayerStatsScript : MonoBehaviour
     public Image hpBar;
     public TextMeshProUGUI scoreText;
     public Image playerIcon;
-    public Image itemSprite;
     public Image itemIcon;
 
     void Start()
@@ -27,14 +26,19 @@ public class PlayerStatsScript : MonoBehaviour
             hpBar = GameObject.Find("HealthBar").GetComponent<Image>();
             scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
             playerIcon = GameObject.Find("PlayerIcon").GetComponent<Image>();
-            Debug.Log("fuckof");
+            itemIcon = GameObject.Find("ItemIcon").GetComponent<Image>();
+
         }
         else if (gameObject.GetComponent<PlayerInput>().PlayerNumber == 2)
         {
             hpBar = GameObject.Find("HealthBar2").GetComponent<Image>();
             scoreText = GameObject.Find("ScoreText2").GetComponent<TextMeshProUGUI>();
             playerIcon = GameObject.Find("PlayerIcon2").GetComponent<Image>();
+            itemIcon = GameObject.Find("ItemIcon2").GetComponent<Image>();
         }
+
+        playerIcon.sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+        itemIcon.sprite = gameObject.GetComponent<ItemStatsScript>().Item.Image;
 
 
         if (stats.Health == CharacterStats.HealthEnum.Tank)
@@ -51,8 +55,6 @@ public class PlayerStatsScript : MonoBehaviour
         }
 
         currentHP = maxHP;
-
-        playerIcon.sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
     }
 
     public void TakeDamage(int amount)

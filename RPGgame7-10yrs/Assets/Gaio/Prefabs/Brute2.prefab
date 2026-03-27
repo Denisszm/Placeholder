@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 3358282067081517014}
   - component: {fileID: 4987682058447376328}
   - component: {fileID: 8369995739391492211}
+  - component: {fileID: 5919775325961948466}
   m_Layer: 7
   m_Name: Brute2
   m_TagString: Player
@@ -387,8 +388,7 @@ MonoBehaviour:
     m_Bits: 0
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
-  PlayerNumber: 1
-  WeaponType: archer
+  PlayerNumber: 2
   AttackDamage: 0
   projectileSpawner: {fileID: 2666262471104656111}
   MeleeAttack: {fileID: 7685628915557548387}
@@ -429,5 +429,19 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &5919775325961948466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116353782506527858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: e7da21a11500a2a428e657f2b37def99, type: 2}
+  description: Enter 'Berserk' mode for a few seconds after slaying an enemy
+  sprite: {fileID: -2739807658926110822, guid: 21d915b87f965534fbba3fc55f58c231, type: 3}
