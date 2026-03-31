@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class SelectionScript : MonoBehaviour
 {
+    public AudioClip toggleSound;
+    public AudioClip confirmSound;
+
     public SpriteRenderer background;
 
     public Sprite b1;
@@ -122,14 +125,18 @@ public class SelectionScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
             CharacterMinus();
         }
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
             CharacterPlus();
         }
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
+            SoundManagerScript.instance.PlaySoundEffect(confirmSound, 1f);
+
             if (firstIsChoosing)
             {
                 GameManagerScript.instance.player1index = currentCharacter;
@@ -152,6 +159,8 @@ public class SelectionScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Escape))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             if (secondIsChoosing)
             {
                 secondIsChoosing = false;

@@ -2169,6 +2169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d98f15bf696b6a46a0266fde936f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toggleSound: {fileID: 8300000, guid: e33f1d968716d6d4b9a9822126c10abc, type: 3}
+  confirmSound: {fileID: 8300000, guid: 2f7346d8689d4674cb084db7bdc961c8, type: 3}
   background: {fileID: 1048060220}
   b1: {fileID: 7505109437576664571, guid: 6bf114e17d512404486330b7b2fee337, type: 3}
   b2: {fileID: 124784684731920748, guid: 05af45d6e3583994d8a034df5c58857b, type: 3}

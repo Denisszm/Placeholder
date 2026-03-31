@@ -5,9 +5,10 @@ using System.Collections.Generic;
 
 public class PauseScript : MonoBehaviour
 {
+    public AudioClip toggleSound;
+    public AudioClip confirmSound;
+
     public GameObject PauseScreen;
-
-
 
     public List<GameObject> Arrows = new List<GameObject>();
     public int CurrentArrow;
@@ -16,6 +17,7 @@ public class PauseScript : MonoBehaviour
 
     void Start()
     {
+        CurrentArrow = 0;
         IsPaused = false;
         Time.timeScale = 1f;
     }
@@ -26,6 +28,8 @@ public class PauseScript : MonoBehaviour
         //ARROW INPUT
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             CurrentArrow++;
             if (CurrentArrow > 2)
             {
@@ -34,6 +38,8 @@ public class PauseScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             CurrentArrow--;
             if (CurrentArrow < 0)
             {
@@ -44,6 +50,8 @@ public class PauseScript : MonoBehaviour
         //INPUT
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             if (CurrentArrow == 0)
             {
                 IsPaused = false;
@@ -77,6 +85,8 @@ public class PauseScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             if (IsPaused)
             {
                 IsPaused = false;
@@ -91,7 +101,6 @@ public class PauseScript : MonoBehaviour
                 
                 IsPaused = true;
                 PauseScreen.SetActive(true);
-                CurrentArrow = 2;
                 Time.timeScale = 0;
             }
         }
