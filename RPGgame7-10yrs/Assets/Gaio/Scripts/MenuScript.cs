@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
+    public AudioClip toggleSound;
+    public AudioClip confirmSound;
+
     public GameObject Arrow;
     public int CurrentArrowPosition;
     public Vector3[] ArrowPositions = new Vector3[4];
@@ -30,6 +33,7 @@ public class MenuScript : MonoBehaviour
         {
             Phase = 2;
             Press.text = "";
+            SoundManagerScript.instance.PlaySoundEffect(confirmSound, 1f);
         }
     }
     void FirstUpdate()
@@ -57,6 +61,8 @@ public class MenuScript : MonoBehaviour
         //Arrow Input
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             CurrentArrowPosition++;
             if (CurrentArrowPosition > 3)
             {
@@ -65,6 +71,8 @@ public class MenuScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+
             CurrentArrowPosition--;
             if (CurrentArrowPosition < 0)
             {
@@ -75,6 +83,8 @@ public class MenuScript : MonoBehaviour
         //Select Input
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
+            SoundManagerScript.instance.PlaySoundEffect(confirmSound, 1f);
+
             if (CurrentArrowPosition == 0)
             {
                 GameManagerScript.instance.playerCount = 1;

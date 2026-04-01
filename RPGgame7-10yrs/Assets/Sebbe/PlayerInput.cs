@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -94,7 +95,7 @@ public class PlayerInput : MonoBehaviour
 
     [Header("AttackSettings")]
 
-    public string WeaponType;
+    private string WeaponType = "heavy";
 
     private float MeleeDuration;
 
@@ -108,6 +109,8 @@ public class PlayerInput : MonoBehaviour
 
     public GameObject MeleeAttack;
 
+    public GameObject HeavyAttack;
+
     public GameObject MageAttack;
 
     public GameObject ArcherAttack;
@@ -116,10 +119,15 @@ public class PlayerInput : MonoBehaviour
 
     public float AttackCD;
 
+    
+
     Quaternion rotation;
     public enum ItemEnum { Bag, Book, Boots, Helmet, Poison, Robe, Shield, Skull }
     public ItemEnum Item;
+    private string itemtype;
 
+   
+    private string playerClass;
 
 
 
@@ -128,56 +136,79 @@ public class PlayerInput : MonoBehaviour
     {
 
         rb = GetComponent<Rigidbody2D>();
+       
+       
 
         rb.freezeRotation = true;
 
         originalGravity = rb.gravityScale;
 
-        Item = ItemEnum.Robe;
-
-
-        if (Item == ItemEnum.Boots)
+        playerClass = gameObject.GetComponent<PlayerStatsScript>().stats.Class.ToString();
+        if (playerClass == "Swordsman")
         {
-            doublejump = true;
-           
+            WeaponType = "melee";
         }
-        else if (Item == ItemEnum.Bag)
+        else if (playerClass == "Archer")
         {
-            // Increases score multiplier
-            bonusscoremult += 0.5f;
+            WeaponType = "archer";
         }
-        else if (Item == ItemEnum.Book)
+        else if (playerClass == "Brute")
         {
-            // Reduces dash cooldown
-            dashcdreduction += 0.5f;
+            WeaponType = "heavy";
         }
-        else if (Item == ItemEnum.Helmet)
+        else if (playerClass == "Sorcerer")
         {
-            // Adds defensive bonus
-            bonusdef += 0.5f;
-        }
-        else if (Item == ItemEnum.Poison)
-        {
-            // Adds attack bonus
-            bonusatk += 0.5f;
-        }
-        else if (Item == ItemEnum.Robe)
-        {
-            // Increases dash distance
-            bonusdashdist += 0.1f;
-        }
-        else if (Item == ItemEnum.Shield)
-        {
-            // Enables the shield
-            bonusdef += 0.5f;
-        }
-        else if (Item == ItemEnum.Skull)
-        {
-            // Enables ragemode
-            ragemode = true;
+            WeaponType = "mage";
         }
 
-        /* string itemtype = gameObject.GetComponent<ItemStatsScript>().Item.Item.ToString();
+      
+
+        // SET item == HÄR
+
+
+        //if (Item == ItemEnum.Boots)
+        //{
+        //    doublejump = true;
+
+        //}
+        //else if (Item == ItemEnum.Bag)
+        //{
+        //    // Increases score multiplier
+        //    bonusscoremult += 0.5f;
+        //}
+        //else if (Item == ItemEnum.Book)
+        //{
+        //    // Reduces dash cooldown
+        //    dashcdreduction += 0.5f;
+        //}
+        //else if (Item == ItemEnum.Helmet)
+        //{
+        //    // Adds defensive bonus
+        //    bonusdef += 0.5f;
+        //}
+        //else if (Item == ItemEnum.Poison)
+        //{
+        //    // Adds attack bonus
+        //    bonusatk += 0.5f;
+        //}
+        //else if (Item == ItemEnum.Robe)
+        //{
+        //    // Increases dash distance
+        //    bonusdashdist += 0.1f;
+        //}
+        //else if (Item == ItemEnum.Shield)
+        //{
+        //    // Enables the shield, for now just def
+        //    bonusdef += 0.5f;
+        //}
+        //else if (Item == ItemEnum.Skull)
+        //{
+        //    // Enables ragemode
+        //    ragemode = true;
+        //}
+
+        string itemtype = gameObject.GetComponent<ItemStatsScript>().Item.Item.ToString();
+        Debug.Log(itemtype);
 
 
 
@@ -213,7 +244,7 @@ public class PlayerInput : MonoBehaviour
          {
              ragemode = true;
          }
-        */
+        
 
     }
 
@@ -384,6 +415,14 @@ public class PlayerInput : MonoBehaviour
                 MeleeAttack.SetActive(true);
 
             }
+            else if (WeaponType == "heavy")
+            {
+                MeleeDuration = 0.4f;
+
+                AttackCD = 0.4f;
+
+                HeavyAttack.SetActive(true);
+            }
 
             else if (WeaponType == "archer")
 
@@ -426,6 +465,7 @@ public class PlayerInput : MonoBehaviour
         {
 
             MeleeAttack.SetActive(false);
+            HeavyAttack.SetActive(false);
 
         }
 

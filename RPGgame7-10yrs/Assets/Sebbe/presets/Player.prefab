@@ -76,6 +76,8 @@ GameObject:
   - component: {fileID: 4676517525544699281}
   - component: {fileID: 1995848827751298156}
   - component: {fileID: 8035283707171573322}
+  - component: {fileID: 8323023710250705293}
+  - component: {fileID: 7596046919906902251}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -145,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3994066901603132776, guid: 4bcd59df002c5284ba89bda9b4724c49, type: 3}
+  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.9339623, g: 0.066082224, b: 0.066082224, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -232,12 +234,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223622cbdab72cb4f9028b975a0eb8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoremultiplier: 0
   movespeed: 13
   jumpForce: 15
-  doublejump: 1
-  dash: 0
-  wallclimb: 0
+  doublejump: 0
+  dash: 1
+  wallclimb: 1
   groundCheck: {fileID: 1202119317021758155}
+  wallCheck: {fileID: 8431535439903733229}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
@@ -245,14 +249,19 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 256
+  playerHitbox: {fileID: 4676517525544699281}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
+  AttackDamage: 0
   projectileSpawner: {fileID: 3056857769389723429}
   MeleeAttack: {fileID: 9200750373413654621}
   MageAttack: {fileID: 5289335829117975435, guid: 00be25c446a57c24eac93a71125f6376, type: 3}
   ArcherAttack: {fileID: 4945375390538287400, guid: 8e411d861fccefd4e9fff3904d7b0f2d, type: 3}
   AttackCD: 0
+  Item: 0
 --- !u!114 &8035283707171573322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +276,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player2: {fileID: 0}
   maxDistance: 20
+--- !u!114 &8323023710250705293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392970470032309469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 0}
+  description: 
+  sprite: {fileID: 0}
+--- !u!114 &7596046919906902251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392970470032309469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80e1c9bf4903da41996fe058a2b3be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 0}
+  maxHP: 0
+  currentHP: 0
+  score: 0
+  hpBar: {fileID: 0}
+  scoreText: {fileID: 0}
+  playerIcon: {fileID: 0}
+  itemSprite: {fileID: 0}
+  itemIcon: {fileID: 0}
 --- !u!1 &9200750373413654621
 GameObject:
   m_ObjectHideFlags: 0

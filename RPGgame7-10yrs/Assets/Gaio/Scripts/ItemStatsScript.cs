@@ -11,7 +11,6 @@ public class ItemStatsScript : MonoBehaviour
     {
         description = Item.Description;
         sprite = Item.Image;
-        Item.Item = ItemStats.ItemEnum.Boots;
     }
 
     // Update is called once per frame

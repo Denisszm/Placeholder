@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 7425064449154272256}
   - component: {fileID: 7615278156672781347}
   - component: {fileID: 7815658220054528767}
+  - component: {fileID: -211427064933471425}
   m_Layer: 7
   m_Name: Sorcerer2
   m_TagString: Player
@@ -356,8 +357,7 @@ MonoBehaviour:
     m_Bits: 0
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
-  PlayerNumber: 1
-  WeaponType: archer
+  PlayerNumber: 2
   AttackDamage: 0
   projectileSpawner: {fileID: 4867435018310768744}
   MeleeAttack: {fileID: 1817288379893486525}
@@ -398,8 +398,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &-211427064933471425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924709905583305283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 5686ec7e541657942be8b2ca9c2b04f1, type: 2}
+  description: Increases amount of Gold Coins gained
+  sprite: {fileID: -6009198046271197863, guid: d5a9f6e75a290594d92b6b94134a6d2d, type: 3}
 --- !u!1 &7691933398380040460
 GameObject:
   m_ObjectHideFlags: 0

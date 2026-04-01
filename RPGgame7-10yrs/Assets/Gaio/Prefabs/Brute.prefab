@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 8411726470787000469}
   - component: {fileID: 5374576203884506975}
   - component: {fileID: 9026233561979098727}
+  - component: {fileID: 6720787855346127322}
   m_Layer: 7
   m_Name: Brute
   m_TagString: Player
@@ -357,7 +358,6 @@ MonoBehaviour:
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 3232592081625747076}
   MeleeAttack: {fileID: 3534076399588998506}
@@ -398,8 +398,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &6720787855346127322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6765982739680658233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: d8ee2c5389a6f8c449253c82136b3f17, type: 2}
+  description: You look cool I guess...
+  sprite: {fileID: 309628545801974608, guid: 75c3fd78c2f8d9743974078f540ad88a, type: 3}
 --- !u!1 &8769581771760283414
 GameObject:
   m_ObjectHideFlags: 0

@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1213981795259985376}
   - component: {fileID: 4468563526139118836}
   - component: {fileID: 2933336433932781866}
+  - component: {fileID: -4193933010883190493}
   m_Layer: 7
   m_Name: Archer
   m_TagString: Player
@@ -357,7 +358,6 @@ MonoBehaviour:
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 7467532689896595219}
   MeleeAttack: {fileID: 7056813522132480791}
@@ -398,8 +398,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &-4193933010883190493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644447280647947428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: db655ed55a6fa5745877c80cf19c71c3, type: 2}
+  description: Inflicts poison to a target upon damaging them
+  sprite: {fileID: -4347532159779508366, guid: c1fd23cba4d7674468be7caf2b4b7924, type: 3}
 --- !u!1 &7991924308198123283
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3164038273937997294}
   - component: {fileID: 1217398385564751782}
   - component: {fileID: 6727459950852674662}
+  - component: {fileID: -2333999008819046051}
   m_Layer: 7
   m_Name: Archer2
   m_TagString: Player
@@ -223,7 +224,6 @@ MonoBehaviour:
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 1110538959544507628}
   MeleeAttack: {fileID: 9075698055676428686}
@@ -264,8 +264,22 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
-  itemSprite: {fileID: 0}
   itemIcon: {fileID: 0}
+--- !u!114 &-2333999008819046051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097910144218415420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abff25d6c8a2d394ab3dcb1ae040a1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: ca14edb750ab11744afb6d6eb9e0e62e, type: 2}
+  description: Increases the amount of times the player can jump
+  sprite: {fileID: 7902364575885455685, guid: 90703260351a7114995cc4f7a11753f8, type: 3}
 --- !u!1 &8986508380756538734
 GameObject:
   m_ObjectHideFlags: 0
