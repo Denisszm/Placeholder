@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gaio/UI.unity
     guid: 103ac872ae7e5d1469319f1e3ed954cc
+  - enabled: 1
+    path: Assets/Gaio/Test1.unity
+    guid: d3a71b77a9077144da8b85f0b7a44d48
+  - enabled: 1
+    path: Assets/Gaio/Test2.unity
+    guid: 2a4c040ea7c2c08439921b7d3784300c
+  - enabled: 1
+    path: Assets/Gaio/Test3.unity
+    guid: 5c1f248cb71f08544b31ab21289bc740
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
