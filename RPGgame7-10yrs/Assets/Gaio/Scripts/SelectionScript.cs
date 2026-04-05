@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class SelectionScript : MonoBehaviour
 {
+    public GameObject mapSelection;
+    public GameObject characterSelection;
+
     public AudioClip toggleSound;
     public AudioClip confirmSound;
 
@@ -43,9 +46,13 @@ public class SelectionScript : MonoBehaviour
     public Text p2SpeedText;
     public Text p2HealthText;
 
+    public List<GameObject> maps;
+    public int currentMap;
+    private bool phase1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        phase1 = true;
         if (GameManagerScript.instance.playerCount == 1)
         {
             for (int i = 0; i < characters.Count; i++)
@@ -143,7 +150,7 @@ public class SelectionScript : MonoBehaviour
 
                 if (GameManagerScript.instance.playerCount == 1)
                 {
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(4 + currentMap);
                 }
                 else
                 {
@@ -154,7 +161,7 @@ public class SelectionScript : MonoBehaviour
             else
             {
                 GameManagerScript.instance.player2index = currentCharacter;
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(4 + currentMap);
             }
         }
         if (Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Escape))
@@ -168,7 +175,7 @@ public class SelectionScript : MonoBehaviour
             }
             else if (firstIsChoosing)
             {
-                SceneManager.LoadScene(1);
+                phase1 = true;
             }
         }
     }
@@ -188,17 +195,75 @@ public class SelectionScript : MonoBehaviour
             currentCharacter = (characters.Count - 1);
         }
     }
+    void MapUpdate()
+    {
+        //INPUT
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+            currentMap--;
+            if (currentMap < 0)
+            {
+                currentMap = (maps.Count - 1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+            currentMap++;
+            if (currentMap > (maps.Count - 1))
+            {
+                currentMap = 0;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            SoundManagerScript.instance.PlaySoundEffect(confirmSound, 1f);
+
+            phase1 = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Escape))
+        {
+            SoundManagerScript.instance.PlaySoundEffect(toggleSound, 1f);
+            SceneManager.LoadScene(1);
+        }
+
+        //
+        for (int i = 0; i < maps.Count; i++)
+        {
+            if (i == currentMap)
+            {
+                maps[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                maps[i].gameObject.SetActive(false);
+            }
+        }
+    }
     void Update()
     {
-        PlayerInput();
-
-        if (GameManagerScript.instance.playerCount == 1)
+        if (phase1)
         {
-            SingleUpdate();
+            mapSelection.SetActive(true);
+            characterSelection.SetActive(false);
+            MapUpdate();
         }
-        else if (GameManagerScript.instance.playerCount == 2)
+        else
         {
-            MultiUpdate();
+            mapSelection.SetActive(false);
+            characterSelection.SetActive(true);
+
+            PlayerInput();
+
+            if (GameManagerScript.instance.playerCount == 1)
+            {
+                SingleUpdate();
+            }
+            else if (GameManagerScript.instance.playerCount == 2)
+            {
+                MultiUpdate();
+            }
         }
     }
 }
