@@ -150,7 +150,7 @@ public class SelectionScript : MonoBehaviour
 
                 if (GameManagerScript.instance.playerCount == 1)
                 {
-                    SceneManager.LoadScene(5 + currentMap);
+                    SceneManager.LoadScene(4 + currentMap);
                 }
                 else
                 {
@@ -161,7 +161,7 @@ public class SelectionScript : MonoBehaviour
             else
             {
                 GameManagerScript.instance.player2index = currentCharacter;
-                SceneManager.LoadScene(5 + currentMap);
+                SceneManager.LoadScene(4 + currentMap);
             }
         }
         if (Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Escape))

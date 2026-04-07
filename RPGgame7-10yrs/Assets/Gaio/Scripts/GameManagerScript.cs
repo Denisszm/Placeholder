@@ -11,6 +11,9 @@ public class GameManagerScript : MonoBehaviour
     public int player1index;
     public int player2index;
 
+    public int score1;
+    public int score2;
+
     public List<GameObject> playerPrefabs = new List<GameObject>();
 
     void Awake()

@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gaio/Test3.unity
     guid: 5c1f248cb71f08544b31ab21289bc740
+  - enabled: 1
+    path: Assets/Gaio/Highscore.unity
+    guid: 6a82225a1dfd1b740ac9aa7b16f1c75f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
