@@ -31,7 +31,7 @@ public class EnemyPatroling : MonoBehaviour
         }
         if ( brain.isPatrolling)
         {
-            Debug.Log("I am patrolling!");
+            
             Vector2 point = currentPoint.position - transform.position;
             if (currentPoint == pointB.transform)
             {
@@ -45,12 +45,18 @@ public class EnemyPatroling : MonoBehaviour
             if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
             {
                 currentPoint = pointA.transform;
+                
 
             }
             if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
             {
                 currentPoint = pointB.transform;
             }
+            brain.LookAt(currentPoint.position);
+        }
+        if (!brain.isPatrolling)
+        {
+            rb.linearVelocity = Vector2.zero;
         }
     }
 
