@@ -40,7 +40,7 @@ public class LevelScript : MonoBehaviour
             {
                 GameManagerScript.instance.score2 = GameObject.Find("Player2 Spawnpoint").GetComponentInChildren<PlayerStatsScript>().score;
             }
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(5);
         }
 
         CheckGameOver();
