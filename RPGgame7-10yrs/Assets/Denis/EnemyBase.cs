@@ -10,6 +10,8 @@ public enum EnemyStates
 }
 public class EnemyBase : MonoBehaviour
 {
+    private float initialScaleX;
+    public Collider2D Collider;
     [Header("State Bools")]
     public bool isPlayerInRange;
     public bool isAttacking => currentState == EnemyStates.Attacking;
@@ -17,16 +19,7 @@ public class EnemyBase : MonoBehaviour
     public bool isPatrolling => currentState == EnemyStates.Patrolling;
     public bool canAttack()
     {
-        float totalTime = (float)Time.time;
-        if ( totalTime > lastAttack + attackCooldown)
-        {
-            lastAttack = totalTime;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return Time.time > lastAttack + attackCooldown;
     }
 
     [Header("EnemyStats")]
@@ -43,21 +36,23 @@ public class EnemyBase : MonoBehaviour
 
     void Start()
     {
-        
+        initialScaleX = transform.localScale.x;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            Debug.Log("Player in range!");
         }
 
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            Debug.Log("Player in range!");
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -65,15 +60,43 @@ public class EnemyBase : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
+            Debug.Log("Player in not range!");
+        }
+    }
+    public void LookAt(Vector2 targetPosition)
+    {
+        if (targetPosition.x > transform.position.x)
+        {
+            transform.localScale = new Vector3(-initialScaleX, transform.localScale.y, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(initialScaleX, transform.localScale.y, 1);
         }
     }
     void Update()
     {
-        if (isPlayerInRange && canAttack())
+        
+        if (HP <= 0)
         {
-            currentState = EnemyStates.Attacking;
+            currentState = EnemyStates.Dead;
         }
-        if (!isPlayerInRange)
+        else if (isPlayerInRange)
+        {
+            if ( currentState != EnemyStates.Attacking)
+            {
+                if (canAttack())
+                {
+                    currentState = EnemyStates.Attacking;
+                    lastAttack = Time.time;
+                }
+                else
+                {
+                    currentState = EnemyStates.Idle;
+                }
+            }
+        }
+        else
         {
             currentState = EnemyStates.Patrolling;
         }

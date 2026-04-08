@@ -208,7 +208,7 @@ MonoBehaviour:
   jumpForce: 15
   doublejump: 1
   dash: 0
-  wallclimb: 0
+  wallclimb: 1
   groundCheck: {fileID: 6477692111911251409}
   wallCheck: {fileID: 2898173471450405060}
   checkRadius: 0.1
@@ -220,13 +220,14 @@ MonoBehaviour:
     m_Bits: 64
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   playerHitbox: {fileID: 0}
   dashMultiplier: 3
   PlayerNumber: 2
   AttackDamage: 0
   projectileSpawner: {fileID: 811860893630002530}
   MeleeAttack: {fileID: 8679867181666783993}
+  HeavyAttack: {fileID: 0}
   MageAttack: {fileID: 5289335829117975435, guid: 00be25c446a57c24eac93a71125f6376, type: 3}
   ArcherAttack: {fileID: 4945375390538287400, guid: 8e411d861fccefd4e9fff3904d7b0f2d, type: 3}
   AttackCD: 0
@@ -262,6 +263,8 @@ MonoBehaviour:
   currentHP: 5000
   score: 0
   hpBar: {fileID: 0}
+  easeHpBar: {fileID: 0}
+  easeSpeed: 0
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
   itemIcon: {fileID: 0}

@@ -4,7 +4,7 @@ public class SoundManagerScript : MonoBehaviour
 {
     public static SoundManagerScript instance;
 
-    [SerializeField] private AudioSource soundEffectObject;
+    [SerializeField] private GameObject soundEffectObject;
 
     private void Awake()
     {
@@ -21,7 +21,8 @@ public class SoundManagerScript : MonoBehaviour
 
     public void PlaySoundEffect(AudioClip audioClip, float volume)
     {
-        AudioSource audioSource = Instantiate(soundEffectObject);
+        GameObject obj = Instantiate(soundEffectObject, transform);
+        AudioSource audioSource = obj.GetComponent<AudioSource>();
 
         audioSource.clip = audioClip;
         audioSource.volume = volume;

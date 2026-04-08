@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 0af2c1c540b75d44a8d1e4bca26a52d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7737059836131514903
+    second: PlayerJester_Bow_0
+  - first:
+      213: 4741611056500381022
+    second: PlayerJester_Bow_1
+  - first:
+      213: -944358930445034947
+    second: PlayerJester_Bow_2
+  - first:
+      213: 3930199896394279689
+    second: PlayerJester_Bow_3
+  - first:
+      213: 1658129252748741861
+    second: PlayerJester_Bow_4
+  - first:
+      213: -6304684489257583266
+    second: PlayerJester_Bow_5
+  - first:
+      213: -5890507587110097953
+    second: PlayerJester_Bow_6
+  - first:
+      213: 3429848470841044813
+    second: PlayerJester_Bow_7
+  - first:
+      213: 1692621454921508811
+    second: PlayerJester_Bow_8
+  - first:
+      213: 5744139284649960837
+    second: PlayerJester_Bow_9
+  - first:
+      213: 4617255484593409248
+    second: PlayerJester_Bow_10
+  - first:
+      213: -9086995283182295480
+    second: PlayerJester_Bow_11
+  - first:
+      213: -8240140608861042200
+    second: PlayerJester_Bow_12
+  - first:
+      213: 372553334891764735
+    second: PlayerJester_Bow_13
+  - first:
+      213: 8468724492562928609
+    second: PlayerJester_Bow_14
+  - first:
+      213: 6549791760063226108
+    second: PlayerJester_Bow_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerJester_Bow_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 772
+        width: 42
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5607d521170a490800000000000000
+      internalID: -7737059836131514903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 772
+        width: 39
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5515cd32269dc140800000000000000
+      internalID: 4741611056500381022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_2
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 772
+        width: 41
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a1b526e86f4e2f0800000000000000
+      internalID: -944358930445034947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 772
+        width: 62
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90babd09bffda8630800000000000000
+      internalID: 3930199896394279689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 516
+        width: 73
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecc5cd25cbd20710800000000000000
+      internalID: 1658129252748741861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 516
+        width: 56
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5df2e45cd24188a0800000000000000
+      internalID: -6304684489257583266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 516
+        width: 65
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb2f8b0f86b04ea0800000000000000
+      internalID: -5890507587110097953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_7
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 516
+        width: 57
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa5e91305499f20800000000000000
+      internalID: 3429848470841044813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 260
+        width: 45
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc72dcfce366d7710800000000000000
+      internalID: 1692621454921508811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 260
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5856de1ee3847bf40800000000000000
+      internalID: 5744139284649960837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 260
+        width: 65
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec0a646669c31040800000000000000
+      internalID: 4617255484593409248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 260
+        width: 65
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846e4465fe184e180800000000000000
+      internalID: -9086995283182295480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 4
+        width: 81
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9019d36c325ad80800000000000000
+      internalID: -8240140608861042200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_13
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 4
+        width: 62
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb5c12c8439b2500800000000000000
+      internalID: 372553334891764735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_14
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 4
+        width: 41
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e31dd78e04f68570800000000000000
+      internalID: 8468724492562928609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJester_Bow_15
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 4
+        width: 39
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0695b47e885ea50800000000000000
+      internalID: 6549791760063226108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerJester_Bow_0: -7737059836131514903
+      PlayerJester_Bow_1: 4741611056500381022
+      PlayerJester_Bow_10: 4617255484593409248
+      PlayerJester_Bow_11: -9086995283182295480
+      PlayerJester_Bow_12: -8240140608861042200
+      PlayerJester_Bow_13: 372553334891764735
+      PlayerJester_Bow_14: 8468724492562928609
+      PlayerJester_Bow_15: 6549791760063226108
+      PlayerJester_Bow_2: -944358930445034947
+      PlayerJester_Bow_3: 3930199896394279689
+      PlayerJester_Bow_4: 1658129252748741861
+      PlayerJester_Bow_5: -6304684489257583266
+      PlayerJester_Bow_6: -5890507587110097953
+      PlayerJester_Bow_7: 3429848470841044813
+      PlayerJester_Bow_8: 1692621454921508811
+      PlayerJester_Bow_9: 5744139284649960837
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

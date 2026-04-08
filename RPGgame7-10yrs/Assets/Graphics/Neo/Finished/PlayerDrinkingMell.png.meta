@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 0cca065f460cfd549af9510c16f34e71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6373027859765348868
+    second: PlayerDrinkingMell_0
+  - first:
+      213: -5477620650237529103
+    second: PlayerDrinkingMell_1
+  - first:
+      213: 8396058352410010932
+    second: PlayerDrinkingMell_2
+  - first:
+      213: -4220833736481333651
+    second: PlayerDrinkingMell_3
+  - first:
+      213: -8743680717076776350
+    second: PlayerDrinkingMell_4
+  - first:
+      213: 4495690472961444250
+    second: PlayerDrinkingMell_5
+  - first:
+      213: -6853735396965125604
+    second: PlayerDrinkingMell_6
+  - first:
+      213: -7987089214031744484
+    second: PlayerDrinkingMell_7
+  - first:
+      213: -4683189562226023279
+    second: PlayerDrinkingMell_8
+  - first:
+      213: -7299490772598687517
+    second: PlayerDrinkingMell_9
+  - first:
+      213: -2739276338550897939
+    second: PlayerDrinkingMell_10
+  - first:
+      213: -7206642121428657522
+    second: PlayerDrinkingMell_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1154
+        width: 221
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5b4036de47e87a0800000000000000
+      internalID: -6373027859765348868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_1
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1154
+        width: 209
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f37f305a059bf3b0800000000000000
+      internalID: -5477620650237529103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_2
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1154
+        width: 209
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435a9d8569ac48470800000000000000
+      internalID: 8396058352410010932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 770
+        width: 209
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e9b0164169c65c0800000000000000
+      internalID: -4220833736481333651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_4
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 770
+        width: 257
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ab43db6b438a680800000000000000
+      internalID: -8743680717076776350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_5
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 770
+        width: 269
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9989fc7aa6e36e30800000000000000
+      internalID: 4495690472961444250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_6
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 386
+        width: 215
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c127f5718f3a2e0a0800000000000000
+      internalID: -6853735396965125604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 386
+        width: 212
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12b8406da8282190800000000000000
+      internalID: -7987089214031744484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_8
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 386
+        width: 215
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19463bfd7e7f10fb0800000000000000
+      internalID: -4683189562226023279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2
+        width: 269
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8730211dff2ba90800000000000000
+      internalID: -7299490772598687517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 53
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de28a03fea22cf9d0800000000000000
+      internalID: -2739276338550897939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMell_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2
+        width: 248
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a90e84c2ddcfb90800000000000000
+      internalID: -7206642121428657522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerDrinkingMell_0: -6373027859765348868
+      PlayerDrinkingMell_1: -5477620650237529103
+      PlayerDrinkingMell_10: -2739276338550897939
+      PlayerDrinkingMell_11: -7206642121428657522
+      PlayerDrinkingMell_2: 8396058352410010932
+      PlayerDrinkingMell_3: -4220833736481333651
+      PlayerDrinkingMell_4: -8743680717076776350
+      PlayerDrinkingMell_5: 4495690472961444250
+      PlayerDrinkingMell_6: -6853735396965125604
+      PlayerDrinkingMell_7: -7987089214031744484
+      PlayerDrinkingMell_8: -4683189562226023279
+      PlayerDrinkingMell_9: -7299490772598687517
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
