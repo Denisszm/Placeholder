@@ -212,10 +212,8 @@ GameObject:
   - component: {fileID: 8035283707171573322}
   - component: {fileID: 8323023710250705293}
   - component: {fileID: 7596046919906902251}
-  - component: {fileID: 7301033008808165292}
-  - component: {fileID: 5950918873740937337}
   m_Layer: 7
-  m_Name: Player
+  m_Name: Player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +283,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.066082224, b: 0.066082224, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -371,10 +369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223622cbdab72cb4f9028b975a0eb8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpingistrue: 0
-  attackingistrue: 0
-  groundedistrue: 0
-  climbingistrue: 0
   scoremultiplier: 0
   movespeed: 13
   jumpForce: 15
@@ -396,7 +390,7 @@ MonoBehaviour:
   playerHitbox: {fileID: 4676517525544699281}
   dashMultiplier: 3
   PlayerNumber: 1
-  WeaponType: melee
+  WeaponType: archer
   AttackDamage: 0
   projectileSpawner: {fileID: 3056857769389723429}
   MeleeAttack: {fileID: 9200750373413654621}
@@ -404,7 +398,7 @@ MonoBehaviour:
   MageAttack: {fileID: 5289335829117975435, guid: 00be25c446a57c24eac93a71125f6376, type: 3}
   ArcherAttack: {fileID: 4945375390538287400, guid: 8e411d861fccefd4e9fff3904d7b0f2d, type: 3}
   AttackCD: 0
-  Item: 5
+  Item: 4
 --- !u!114 &8035283707171573322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,41 +450,6 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   playerIcon: {fileID: 0}
   itemIcon: {fileID: 0}
---- !u!95 &7301033008808165292
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392970470032309469}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0c9af9abf77251349a485fb646102d1b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5950918873740937337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392970470032309469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c04812b40286e3b428b6288de5718932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInputScript: {fileID: 1995848827751298156}
 --- !u!1 &9200750373413654621
 GameObject:
   m_ObjectHideFlags: 0
