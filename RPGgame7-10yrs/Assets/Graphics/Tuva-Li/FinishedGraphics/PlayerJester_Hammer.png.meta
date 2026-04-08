@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Hammer_0: 7467271880318559606
+      PlayerJester_Hammer_1: 4055674217019518769
+      PlayerJester_Hammer_10: -8780983053395358878
+      PlayerJester_Hammer_11: -2608290459655296041
+      PlayerJester_Hammer_12: 5477533241524475443
+      PlayerJester_Hammer_13: -7419863534532091085
+      PlayerJester_Hammer_2: 830133912518515646
+      PlayerJester_Hammer_3: 2210696068368436457
+      PlayerJester_Hammer_4: -441218650996168487
+      PlayerJester_Hammer_5: 6807819751753926209
+      PlayerJester_Hammer_6: -950825265635817339
+      PlayerJester_Hammer_7: 9190810008233060331
+      PlayerJester_Hammer_8: -5728665542672309412
+      PlayerJester_Hammer_9: -7840633263777575594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

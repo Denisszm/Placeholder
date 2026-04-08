@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beehive_0: 5093794806381687847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

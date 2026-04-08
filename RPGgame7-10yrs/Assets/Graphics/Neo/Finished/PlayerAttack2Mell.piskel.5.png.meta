@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerAttack2Mell.piskel.5_0: 2670245005141848799
+      PlayerAttack2Mell.piskel.5_1: 7786965916027476794
+      PlayerAttack2Mell.piskel.5_10: -3140427116796139196
+      PlayerAttack2Mell.piskel.5_11: -3111842156504539187
+      PlayerAttack2Mell.piskel.5_12: 5066251595934184968
+      PlayerAttack2Mell.piskel.5_13: -4766456169181092127
+      PlayerAttack2Mell.piskel.5_2: -4411246593972584422
+      PlayerAttack2Mell.piskel.5_3: -6565267491212499377
+      PlayerAttack2Mell.piskel.5_4: -243146062292148910
+      PlayerAttack2Mell.piskel.5_5: -1330019819467089000
+      PlayerAttack2Mell.piskel.5_6: -5026530238336825460
+      PlayerAttack2Mell.piskel.5_7: 3741734300776150652
+      PlayerAttack2Mell.piskel.5_8: -8295664269853065457
+      PlayerAttack2Mell.piskel.5_9: 5528325166934760632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

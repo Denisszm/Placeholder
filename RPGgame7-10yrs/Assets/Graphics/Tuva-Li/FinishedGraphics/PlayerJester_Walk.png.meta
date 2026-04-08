@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Walk_0: -6409560372430782631
+      PlayerJester_Walk_1: -5462917314973856884
+      PlayerJester_Walk_2: 3637625677101825153
+      PlayerJester_Walk_3: 528993620520532506
+      PlayerJester_Walk_4: 2801575028394404227
+      PlayerJester_Walk_5: -7673464563472853759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

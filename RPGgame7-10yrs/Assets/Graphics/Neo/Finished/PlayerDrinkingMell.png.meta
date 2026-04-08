@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDrinkingMell_0: -6373027859765348868
+      PlayerDrinkingMell_1: -5477620650237529103
+      PlayerDrinkingMell_10: -2739276338550897939
+      PlayerDrinkingMell_11: -7206642121428657522
+      PlayerDrinkingMell_2: 8396058352410010932
+      PlayerDrinkingMell_3: -4220833736481333651
+      PlayerDrinkingMell_4: -8743680717076776350
+      PlayerDrinkingMell_5: 4495690472961444250
+      PlayerDrinkingMell_6: -6853735396965125604
+      PlayerDrinkingMell_7: -7987089214031744484
+      PlayerDrinkingMell_8: -4683189562226023279
+      PlayerDrinkingMell_9: -7299490772598687517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

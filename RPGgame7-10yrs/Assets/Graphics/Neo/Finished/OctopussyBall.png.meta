@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OctopussyBall_0: -6832720062264556546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

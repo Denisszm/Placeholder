@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Dash_0: -8072685045613181329
+      PlayerJester_Dash_1: -9141639085901040775
+      PlayerJester_Dash_2: -6043694756277510497
+      PlayerJester_Dash_3: -7149055496515166565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

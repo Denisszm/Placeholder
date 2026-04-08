@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJumpMellHammer_0: -658071757765887608
+      PlayerJumpMellHammer_1: 8237438854075749602
+      PlayerJumpMellHammer_2: 5118973230482856906
+      PlayerJumpMellHammer_3: -303544015713690915
+      PlayerJumpMellHammer_4: -6205611531538781452
+      PlayerJumpMellHammer_5: 270045722800047021
+      PlayerJumpMellHammer_6: -3644874488264742649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

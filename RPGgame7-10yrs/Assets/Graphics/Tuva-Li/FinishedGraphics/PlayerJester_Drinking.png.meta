@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Drinking_0: -4979026398613314294
+      PlayerJester_Drinking_1: -2620580187566610143
+      PlayerJester_Drinking_10: -6763440695792634553
+      PlayerJester_Drinking_11: -7887053803608076934
+      PlayerJester_Drinking_2: 187811928375251479
+      PlayerJester_Drinking_3: 300468732700690214
+      PlayerJester_Drinking_4: 7550763954723697224
+      PlayerJester_Drinking_5: 779705514517418672
+      PlayerJester_Drinking_6: -4465651862465207661
+      PlayerJester_Drinking_7: 4854167581473939023
+      PlayerJester_Drinking_8: -4451430153417580942
+      PlayerJester_Drinking_9: 2110689214940459686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

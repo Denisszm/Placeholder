@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bird2_0: -1010188601609643858
+      Bird2_1: 5895539939010163216
+      Bird2_2: 3757896345475505039
+      Bird2_3: -3714033063842254221
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

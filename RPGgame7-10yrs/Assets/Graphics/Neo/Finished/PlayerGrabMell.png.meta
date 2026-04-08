@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerGrabMell_0: 6130587227438475456
+      PlayerGrabMell_1: 5087727165183831215
+      PlayerGrabMell_2: -2479573360229077981
+      PlayerGrabMell_3: -4192391040265253025
+      PlayerGrabMell_4: -9120276183661321013
+      PlayerGrabMell_5: 1132313004332556911
+      PlayerGrabMell_6: 6328366764285135005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

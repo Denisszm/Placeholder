@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwayingGrass_0: 3249456514241038403
+      SwayingGrass_1: 158340612188829379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

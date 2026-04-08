@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Death_0: 2113695583452138734
+      PlayerJester_Death_1: -3761058543516568934
+      PlayerJester_Death_2: -7579975124895025701
+      PlayerJester_Death_3: -4011237324080770171
+      PlayerJester_Death_4: -5241077066491453747
+      PlayerJester_Death_5: -2681751816602125725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

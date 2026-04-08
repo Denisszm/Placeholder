@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Octopussy1_0: 9003274633349139247
+      Octopussy1_1: 7066669158516886968
+      Octopussy1_2: -6446451107012191539
+      Octopussy1_3: -3930752316298099089
+      Octopussy1_4: 8575677197000380305
+      Octopussy1_5: 1613342710708781929
+      Octopussy1_6: 251935810568968871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

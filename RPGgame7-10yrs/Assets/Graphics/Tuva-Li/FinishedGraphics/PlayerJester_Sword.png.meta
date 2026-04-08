@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Sword_0: -5245298686877591859
+      PlayerJester_Sword_1: 4478430648018639704
+      PlayerJester_Sword_2: -2132488500634696231
+      PlayerJester_Sword_3: -1777547753151164346
+      PlayerJester_Sword_4: 8681911540107114911
+      PlayerJester_Sword_5: 1394193132834575299
+      PlayerJester_Sword_6: 3660319605053658038
+      PlayerJester_Sword_7: 1125622898523681389
+      PlayerJester_Sword_8: -8320898659845366834
+      PlayerJester_Sword_9: 464453255258384503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

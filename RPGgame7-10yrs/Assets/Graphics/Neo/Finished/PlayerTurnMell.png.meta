@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerTurnMell_0: -4136091764626724192
+      PlayerTurnMell_1: 4390096190198317147
+      PlayerTurnMell_2: -4585976101529845782
+      PlayerTurnMell_3: 1412563744116864727
+      PlayerTurnMell_4: 4818673616472941214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

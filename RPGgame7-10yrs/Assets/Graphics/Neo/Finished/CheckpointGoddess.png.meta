@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CheckpointGoddess_0: 2544505721726704263
+      CheckpointGoddess_1: -7459783276269826080
+      CheckpointGoddess_2: 2669455154832218418
+      CheckpointGoddess_3: 8505173776038034873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Bow_0: -7737059836131514903
+      PlayerJester_Bow_1: 4741611056500381022
+      PlayerJester_Bow_10: 4617255484593409248
+      PlayerJester_Bow_11: -9086995283182295480
+      PlayerJester_Bow_12: -8240140608861042200
+      PlayerJester_Bow_13: 372553334891764735
+      PlayerJester_Bow_14: 8468724492562928609
+      PlayerJester_Bow_15: 6549791760063226108
+      PlayerJester_Bow_2: -944358930445034947
+      PlayerJester_Bow_3: 3930199896394279689
+      PlayerJester_Bow_4: 1658129252748741861
+      PlayerJester_Bow_5: -6304684489257583266
+      PlayerJester_Bow_6: -5890507587110097953
+      PlayerJester_Bow_7: 3429848470841044813
+      PlayerJester_Bow_8: 1692621454921508811
+      PlayerJester_Bow_9: 5744139284649960837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerIdelMellHammer_0: 7504057688388885963
+      PlayerIdelMellHammer_1: 4071239665628470360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

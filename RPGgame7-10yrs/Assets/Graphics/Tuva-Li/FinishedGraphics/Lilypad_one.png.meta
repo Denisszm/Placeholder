@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lilypad_one_0: -8257978552823307689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

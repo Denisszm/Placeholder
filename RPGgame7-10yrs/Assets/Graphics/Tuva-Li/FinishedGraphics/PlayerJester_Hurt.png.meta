@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Hurt_0: 131956283580792139
+      PlayerJester_Hurt_1: -5716284865828608643
+      PlayerJester_Hurt_2: -3126810555312494579
+      PlayerJester_Hurt_3: -9168611192503340539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

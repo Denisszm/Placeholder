@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDrinkingMellHammer_0: 4221651536593420359
+      PlayerDrinkingMellHammer_1: -4070778199595707407
+      PlayerDrinkingMellHammer_10: 4099660741850105000
+      PlayerDrinkingMellHammer_11: -1763976847427442605
+      PlayerDrinkingMellHammer_2: -2840222828943894210
+      PlayerDrinkingMellHammer_3: 5766705982647374974
+      PlayerDrinkingMellHammer_4: -2100234805898149647
+      PlayerDrinkingMellHammer_5: 3812514074466200364
+      PlayerDrinkingMellHammer_6: -164775236120210820
+      PlayerDrinkingMellHammer_7: 8587074932142163086
+      PlayerDrinkingMellHammer_8: 1345413409346727381
+      PlayerDrinkingMellHammer_9: -2481302124802064929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

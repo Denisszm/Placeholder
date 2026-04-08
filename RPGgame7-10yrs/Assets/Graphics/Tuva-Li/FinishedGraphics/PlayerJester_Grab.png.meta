@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerJester_Grab_0: -5005728058585390846
+      PlayerJester_Grab_1: 3647839718753719947
+      PlayerJester_Grab_2: -2631010670508532755
+      PlayerJester_Grab_3: -5952394768405968743
+      PlayerJester_Grab_4: 7480911295358951210
+      PlayerJester_Grab_5: -3089070203390614810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
