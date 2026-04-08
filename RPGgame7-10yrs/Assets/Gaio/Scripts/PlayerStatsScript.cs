@@ -113,6 +113,7 @@ public class PlayerStatsScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(500);
+            AddScore(Random.Range(40, 60));
         }
 
         UpdateHealth();

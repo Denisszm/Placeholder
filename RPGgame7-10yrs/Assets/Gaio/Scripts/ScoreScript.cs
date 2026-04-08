@@ -17,6 +17,8 @@ public class ScoreScript : MonoBehaviour
     public List<GameObject> characters;
     private int currentCharacter;
 
+    public Text scoreText;
+
     private class Highscores
     {
         public List<HighscoreEntry> highscoreEntries;
@@ -40,7 +42,7 @@ public class ScoreScript : MonoBehaviour
                     isPlayer1 = false;
                     isPlayer2 = false;
 
-                    currentCharacter = GameManagerScript.instance.player1index;
+                    currentCharacter = GameManagerScript.instance.player2index;
                     AddHighscoreEntry(GameManagerScript.instance.score2, "P2");
                     string jsonString = PlayerPrefs.GetString("highscoreTable");
                     Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
@@ -95,6 +97,15 @@ public class ScoreScript : MonoBehaviour
             {
                 characters[i].gameObject.SetActive(false);
             }
+        }
+
+        if (isPlayer1)
+        {
+            scoreText.text = $"SCORE: {GameManagerScript.instance.score1}";
+        }
+        else
+        {
+            scoreText.text = $"SCORE: {GameManagerScript.instance.score2}";
         }
     }
 
