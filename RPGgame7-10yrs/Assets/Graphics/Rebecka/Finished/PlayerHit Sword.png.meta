@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerHit Sword_0: -6765094723993404345
+      PlayerHit Sword_1: 3886195319760313221
+      PlayerHit Sword_2: 5693946772705064628
+      PlayerHit Sword_3: 5403555143265149631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

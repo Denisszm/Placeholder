@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flying whale_0: 5606457571445980965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

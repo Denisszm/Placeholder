@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerHit Hammer_0: 7697535538528413709
+      PlayerHit Hammer_1: 6713996356775396639
+      PlayerHit Hammer_2: 260973573174641732
+      PlayerHit Hammer_3: 7559000345158553258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

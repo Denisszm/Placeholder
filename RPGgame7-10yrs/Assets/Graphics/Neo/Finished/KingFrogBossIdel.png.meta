@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KingFrogBossIdel_0: 5613294999682862740
+      KingFrogBossIdel_1: 8002812971488020357
+      KingFrogBossIdel_2: 3561127430486853417
+      KingFrogBossIdel_3: 6606853412558380885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

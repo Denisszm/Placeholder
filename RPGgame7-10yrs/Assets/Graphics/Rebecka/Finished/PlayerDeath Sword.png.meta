@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDeath Sword_0: -6726093717178748814
+      PlayerDeath Sword_1: 6950675387771065089
+      PlayerDeath Sword_2: -9074165605884286781
+      PlayerDeath Sword_3: -5688331963218792861
+      PlayerDeath Sword_4: 3031785755047208418
+      PlayerDeath Sword_5: -827715311856227166
+      PlayerDeath Sword_6: 3562167992838030459
+      PlayerDeath Sword_7: -7368215770135432273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

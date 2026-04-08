@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerGrab Sword_0: 607113306626323310
+      PlayerGrab Sword_1: 7495228771841979741
+      PlayerGrab Sword_2: -4071670186623164398
+      PlayerGrab Sword_3: 6234928468737432043
+      PlayerGrab Sword_4: -2322013794184336470
+      PlayerGrab Sword_5: 5770787173993854330
+      PlayerGrab Sword_6: -28564218644997335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

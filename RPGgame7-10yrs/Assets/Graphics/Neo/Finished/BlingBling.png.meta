@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlingBling_0: 6765144551139708889
+      BlingBling_1: 3206214582850148602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

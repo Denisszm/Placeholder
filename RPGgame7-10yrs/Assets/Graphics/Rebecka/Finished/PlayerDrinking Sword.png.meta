@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDrinking Sword_0: -6764827095348283289
+      PlayerDrinking Sword_1: -6291451574646511334
+      PlayerDrinking Sword_10: 1719706593859984188
+      PlayerDrinking Sword_11: -2936760197711923180
+      PlayerDrinking Sword_2: -6418810101599088036
+      PlayerDrinking Sword_3: -7656331419731267937
+      PlayerDrinking Sword_4: 6559438904727463138
+      PlayerDrinking Sword_5: -7111809929834514824
+      PlayerDrinking Sword_6: -8375258378863798624
+      PlayerDrinking Sword_7: 4136952117634973596
+      PlayerDrinking Sword_8: -8734841300869798672
+      PlayerDrinking Sword_9: 4725434462691465019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

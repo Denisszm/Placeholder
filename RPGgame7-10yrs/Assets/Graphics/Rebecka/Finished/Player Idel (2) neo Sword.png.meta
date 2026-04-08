@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player Idel (2) neo Sword_0: -2430974549525525473
+      Player Idel (2) neo Sword_1: 686785166205494567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

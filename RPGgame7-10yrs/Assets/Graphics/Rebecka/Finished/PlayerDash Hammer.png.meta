@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDash Hammer_0: -8775353120062341105
+      PlayerDash Hammer_1: 5368032389502031774
+      PlayerDash Hammer_2: 7389572421794144136
+      PlayerDash Hammer_3: -851869050754183501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

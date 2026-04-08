@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerWalk Hammer_0: 3138073060444626249
+      PlayerWalk Hammer_1: -3522641573026559571
+      PlayerWalk Hammer_2: 5052417699830276559
+      PlayerWalk Hammer_3: -163209308539616786
+      PlayerWalk Hammer_4: 7166174110819847691
+      PlayerWalk Hammer_5: -7713546379871277384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

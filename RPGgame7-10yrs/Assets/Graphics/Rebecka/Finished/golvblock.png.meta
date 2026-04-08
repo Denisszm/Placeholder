@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golvblock_0: -166312064363655189
+      golvblock_1: 6912241584371713127
+      golvblock_2: 2118672182498947365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

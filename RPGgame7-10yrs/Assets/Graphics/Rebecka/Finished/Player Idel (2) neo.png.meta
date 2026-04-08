@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player Idel (2) neo_0: -4490515392270444363
+      Player Idel (2) neo_1: 4187889476252941638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
