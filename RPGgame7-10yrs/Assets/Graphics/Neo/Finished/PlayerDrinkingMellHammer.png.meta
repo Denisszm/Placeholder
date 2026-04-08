@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 020804082d1c3054d88dc056f5d776b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4221651536593420359
+    second: PlayerDrinkingMellHammer_0
+  - first:
+      213: -4070778199595707407
+    second: PlayerDrinkingMellHammer_1
+  - first:
+      213: -2840222828943894210
+    second: PlayerDrinkingMellHammer_2
+  - first:
+      213: 5766705982647374974
+    second: PlayerDrinkingMellHammer_3
+  - first:
+      213: -2100234805898149647
+    second: PlayerDrinkingMellHammer_4
+  - first:
+      213: 3812514074466200364
+    second: PlayerDrinkingMellHammer_5
+  - first:
+      213: -164775236120210820
+    second: PlayerDrinkingMellHammer_6
+  - first:
+      213: 8587074932142163086
+    second: PlayerDrinkingMellHammer_7
+  - first:
+      213: 1345413409346727381
+    second: PlayerDrinkingMellHammer_8
+  - first:
+      213: -2481302124802064929
+    second: PlayerDrinkingMellHammer_9
+  - first:
+      213: 4099660741850105000
+    second: PlayerDrinkingMellHammer_10
+  - first:
+      213: -1763976847427442605
+    second: PlayerDrinkingMellHammer_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1154
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740022c84b1569a30800000000000000
+      internalID: 4221651536593420359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_1
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1154
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f391bd9bc0b187c0800000000000000
+      internalID: -4070778199595707407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_2
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1154
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3918dd92608598d0800000000000000
+      internalID: -2840222828943894210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 770
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7411d3b984770050800000000000000
+      internalID: 5766705982647374974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 770
+        width: 377
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0878152977ad2e0800000000000000
+      internalID: -2100234805898149647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_5
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 770
+        width: 389
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b2cb5e955c8e430800000000000000
+      internalID: 3812514074466200364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 386
+        width: 353
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c721647bbc996bdf0800000000000000
+      internalID: -164775236120210820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_7
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 386
+        width: 353
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84cefd872b6b2770800000000000000
+      internalID: 8587074932142163086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_8
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 386
+        width: 353
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dda8241e5edba210800000000000000
+      internalID: 1345413409346727381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2
+        width: 389
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd30ce2dd4a09dd0800000000000000
+      internalID: -2481302124802064929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 53
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4079949bbe4e830800000000000000
+      internalID: 4099660741850105000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinkingMellHammer_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 2
+        width: 368
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358e21937681587e0800000000000000
+      internalID: -1763976847427442605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerDrinkingMellHammer_0: 4221651536593420359
+      PlayerDrinkingMellHammer_1: -4070778199595707407
+      PlayerDrinkingMellHammer_10: 4099660741850105000
+      PlayerDrinkingMellHammer_11: -1763976847427442605
+      PlayerDrinkingMellHammer_2: -2840222828943894210
+      PlayerDrinkingMellHammer_3: 5766705982647374974
+      PlayerDrinkingMellHammer_4: -2100234805898149647
+      PlayerDrinkingMellHammer_5: 3812514074466200364
+      PlayerDrinkingMellHammer_6: -164775236120210820
+      PlayerDrinkingMellHammer_7: 8587074932142163086
+      PlayerDrinkingMellHammer_8: 1345413409346727381
+      PlayerDrinkingMellHammer_9: -2481302124802064929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

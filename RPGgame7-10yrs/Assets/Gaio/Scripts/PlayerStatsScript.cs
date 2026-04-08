@@ -15,9 +15,13 @@ public class PlayerStatsScript : MonoBehaviour
 
     //PlayerUI
     public Image hpBar;
+    public Image easeHpBar;
+    public float easeSpeed;
     public TextMeshProUGUI scoreText;
     public Image playerIcon;
     public Image itemIcon;
+
+    private float flashTimer;
 
     void Start()
     {
@@ -27,7 +31,7 @@ public class PlayerStatsScript : MonoBehaviour
             scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
             playerIcon = GameObject.Find("PlayerIcon").GetComponent<Image>();
             itemIcon = GameObject.Find("ItemIcon").GetComponent<Image>();
-
+            easeHpBar = GameObject.Find("EaseHealthBar").GetComponent<Image>();
         }
         else if (gameObject.GetComponent<PlayerInput>().PlayerNumber == 2)
         {
@@ -35,6 +39,7 @@ public class PlayerStatsScript : MonoBehaviour
             scoreText = GameObject.Find("ScoreText2").GetComponent<TextMeshProUGUI>();
             playerIcon = GameObject.Find("PlayerIcon2").GetComponent<Image>();
             itemIcon = GameObject.Find("ItemIcon2").GetComponent<Image>();
+            easeHpBar = GameObject.Find("EaseHealthBar2").GetComponent<Image>();
         }
 
         playerIcon.sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -54,6 +59,7 @@ public class PlayerStatsScript : MonoBehaviour
             maxHP = 5000;
         }
 
+        easeSpeed = 0.05f;
         currentHP = maxHP;
     }
 
@@ -86,13 +92,15 @@ public class PlayerStatsScript : MonoBehaviour
         score += amount;
     }
 
-
-
-
     void UpdateHealth()
     {
         float percent = (float)currentHP / maxHP;
         hpBar.fillAmount = percent;
+
+        if (easeHpBar.fillAmount != hpBar.fillAmount)
+        {
+            easeHpBar.fillAmount = Mathf.Lerp(easeHpBar.fillAmount, hpBar.fillAmount, easeSpeed);
+        }
     }
 
     void UpdateScore()
@@ -100,13 +108,31 @@ public class PlayerStatsScript : MonoBehaviour
         scoreText.text = $"{score}";
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        TakeDamage(1);
-        AddScore(1);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(500);
+            AddScore(Random.Range(40, 60));
+        }
 
         UpdateHealth();
         UpdateScore();
+
+        flashTimer -= Time.deltaTime;
+        if (flashTimer < 0)
+        {
+            flashTimer = 1;
+        }
+
+        float percent = (float)currentHP / maxHP;
+        if (flashTimer < 0.5 && percent < 0.4)
+        {
+            hpBar.color = Color.white;
+        }
+        else
+        {
+            hpBar.color = new Color32(80, 0, 0, 255);
+        }
     }
 }

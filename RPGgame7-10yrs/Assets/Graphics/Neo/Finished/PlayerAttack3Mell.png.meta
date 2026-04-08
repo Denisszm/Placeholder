@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 2db80b527229b8341af7801148c0ac74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1622859675732282856
+    second: PlayerAttack3Mell_0
+  - first:
+      213: 360805220455095160
+    second: PlayerAttack3Mell_1
+  - first:
+      213: 5407253822116946875
+    second: PlayerAttack3Mell_2
+  - first:
+      213: 1255023470207655298
+    second: PlayerAttack3Mell_3
+  - first:
+      213: 8699231352242530222
+    second: PlayerAttack3Mell_4
+  - first:
+      213: -2359578503666197100
+    second: PlayerAttack3Mell_5
+  - first:
+      213: 3981560111224485978
+    second: PlayerAttack3Mell_6
+  - first:
+      213: -7186207667650278793
+    second: PlayerAttack3Mell_7
+  - first:
+      213: -2858307401714017457
+    second: PlayerAttack3Mell_8
+  - first:
+      213: -2827212491016158966
+    second: PlayerAttack3Mell_9
+  - first:
+      213: 1379784660208813973
+    second: PlayerAttack3Mell_10
+  - first:
+      213: 6236686519745533516
+    second: PlayerAttack3Mell_11
+  - first:
+      213: 3560982320691790214
+    second: PlayerAttack3Mell_12
+  - first:
+      213: 1641692639072561984
+    second: PlayerAttack3Mell_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_0
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2315
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812fba329b17a79e0800000000000000
+      internalID: -1622859675732282856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_1
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 2315
+        width: 260
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b1556bf66d10500800000000000000
+      internalID: 360805220455095160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_2
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 2591
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb367adc3bc6a0b40800000000000000
+      internalID: 5407253822116946875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_3
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 2315
+        width: 275
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d518e523dba6110800000000000000
+      internalID: 1255023470207655298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1547
+        width: 317
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea76b5903d0e9b870800000000000000
+      internalID: 8699231352242530222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_5
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1547
+        width: 329
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d145d3ad7114fd0800000000000000
+      internalID: -2359578503666197100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_6
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1547
+        width: 323
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58766173d7514730800000000000000
+      internalID: 3981560111224485978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1145
+        width: 194
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a448f4336754c90800000000000000
+      internalID: -7186207667650278793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1139
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b57f5ef804558d0800000000000000
+      internalID: -2858307401714017457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 773
+        width: 458
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a014f68f739b3c8d0800000000000000
+      internalID: -2827212491016158966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_10
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 782
+        width: 503
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597874a86daf52310800000000000000
+      internalID: 1379784660208813973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_11
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 776
+        width: 398
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4656e8a8592d8650800000000000000
+      internalID: 6236686519745533516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_12
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 92
+        width: 137
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681c744cd862b6130800000000000000
+      internalID: 3560982320691790214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack3Mell_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 5
+        width: 179
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b2b46d1c678c610800000000000000
+      internalID: 1641692639072561984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerAttack3Mell_0: -1622859675732282856
+      PlayerAttack3Mell_1: 360805220455095160
+      PlayerAttack3Mell_10: 1379784660208813973
+      PlayerAttack3Mell_11: 6236686519745533516
+      PlayerAttack3Mell_12: 3560982320691790214
+      PlayerAttack3Mell_13: 1641692639072561984
+      PlayerAttack3Mell_2: 5407253822116946875
+      PlayerAttack3Mell_3: 1255023470207655298
+      PlayerAttack3Mell_4: 8699231352242530222
+      PlayerAttack3Mell_5: -2359578503666197100
+      PlayerAttack3Mell_6: 3981560111224485978
+      PlayerAttack3Mell_7: -7186207667650278793
+      PlayerAttack3Mell_8: -2858307401714017457
+      PlayerAttack3Mell_9: -2827212491016158966
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

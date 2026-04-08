@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 9d0a930a863f69543a3a3976b7f509bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 209443081760209730
+    second: PlayerAttack2.5.piskel.5_0
+  - first:
+      213: 1210459628909479180
+    second: PlayerAttack2.5.piskel.5_1
+  - first:
+      213: -335638189635494615
+    second: PlayerAttack2.5.piskel.5_2
+  - first:
+      213: 1499443567766957484
+    second: PlayerAttack2.5.piskel.5_3
+  - first:
+      213: -1145324925902697007
+    second: PlayerAttack2.5.piskel.5_4
+  - first:
+      213: -163042727714074521
+    second: PlayerAttack2.5.piskel.5_5
+  - first:
+      213: -8368885383586597079
+    second: PlayerAttack2.5.piskel.5_6
+  - first:
+      213: -1235664280043429368
+    second: PlayerAttack2.5.piskel.5_7
+  - first:
+      213: 2537847238067233030
+    second: PlayerAttack2.5.piskel.5_8
+  - first:
+      213: -618908077510202958
+    second: PlayerAttack2.5.piskel.5_9
+  - first:
+      213: -6405850763094521126
+    second: PlayerAttack2.5.piskel.5_10
+  - first:
+      213: -7793146720892525926
+    second: PlayerAttack2.5.piskel.5_11
+  - first:
+      213: -665702708434865790
+    second: PlayerAttack2.5.piskel.5_12
+  - first:
+      213: 3273486272471123654
+    second: PlayerAttack2.5.piskel.5_13
+  - first:
+      213: 6920745060852623663
+    second: PlayerAttack2.5.piskel.5_14
+  - first:
+      213: 3617502093687123943
+    second: PlayerAttack2.5.piskel.5_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 771
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bfaf88f5718e200800000000000000
+      internalID: 209443081760209730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 771
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05c9148e9a6cc010800000000000000
+      internalID: 1210459628909479180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 771
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d98b548d2975bf0800000000000000
+      internalID: -335638189635494615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 771
+        width: 62
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad6e710bf71fc410800000000000000
+      internalID: 1499443567766957484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 515
+        width: 73
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd4b2f4c0dfa10f0800000000000000
+      internalID: -1145324925902697007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 515
+        width: 61
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7605463c081ccbdf0800000000000000
+      internalID: -163042727714074521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 515
+        width: 66
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927bc59751fbbdb80800000000000000
+      internalID: -8368885383586597079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_7
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 515
+        width: 57
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8026f5652e90adee0800000000000000
+      internalID: -1235664280043429368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 259
+        width: 52
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601243fed9e383320800000000000000
+      internalID: 2537847238067233030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 259
+        width: 64
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b96263f1623967f0800000000000000
+      internalID: -618908077510202958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 259
+        width: 67
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada069daba8d917a0800000000000000
+      internalID: -6405850763094521126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 259
+        width: 66
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9263b2e85e29d390800000000000000
+      internalID: -7793146720892525926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3
+        width: 81
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28179b9e9e2f2c6f0800000000000000
+      internalID: -665702708434865790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_13
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 3
+        width: 66
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c642cfcb62cd6d20800000000000000
+      internalID: 3273486272471123654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_14
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29e82517fc6b0060800000000000000
+      internalID: 6920745060852623663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack2.5.piskel.5_15
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 3
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efe374ecf2f33230800000000000000
+      internalID: 3617502093687123943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerAttack2.5.piskel.5_0: 209443081760209730
+      PlayerAttack2.5.piskel.5_1: 1210459628909479180
+      PlayerAttack2.5.piskel.5_10: -6405850763094521126
+      PlayerAttack2.5.piskel.5_11: -7793146720892525926
+      PlayerAttack2.5.piskel.5_12: -665702708434865790
+      PlayerAttack2.5.piskel.5_13: 3273486272471123654
+      PlayerAttack2.5.piskel.5_14: 6920745060852623663
+      PlayerAttack2.5.piskel.5_15: 3617502093687123943
+      PlayerAttack2.5.piskel.5_2: -335638189635494615
+      PlayerAttack2.5.piskel.5_3: 1499443567766957484
+      PlayerAttack2.5.piskel.5_4: -1145324925902697007
+      PlayerAttack2.5.piskel.5_5: -163042727714074521
+      PlayerAttack2.5.piskel.5_6: -8368885383586597079
+      PlayerAttack2.5.piskel.5_7: -1235664280043429368
+      PlayerAttack2.5.piskel.5_8: 2537847238067233030
+      PlayerAttack2.5.piskel.5_9: -618908077510202958
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

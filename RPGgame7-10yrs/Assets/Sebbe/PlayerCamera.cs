@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerCamera : MonoBehaviour
 {
@@ -16,9 +17,17 @@ public class PlayerCamera : MonoBehaviour
 
     private Camera cam;
 
-    void Start()
+    IEnumerator Start()
     {
         cam = GetComponent<Camera>();
+
+        yield return null; // wait 1 frame
+
+        player1 = GameObject.Find("Player Spawnpoint").transform.GetChild(0);
+        if (GameManagerScript.instance.playerCount == 2)
+        {
+            player2 = GameObject.Find("Player2 Spawnpoint").transform.GetChild(0);
+        }
     }
 
     void LateUpdate()

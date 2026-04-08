@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: de559206ba244ad49b32cc19dfaadbc1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3905828425167348138
+    second: PlayerDrinking hammer_0
+  - first:
+      213: -8705299416378879977
+    second: PlayerDrinking hammer_1
+  - first:
+      213: -714951405332724159
+    second: PlayerDrinking hammer_2
+  - first:
+      213: -7753527744695146965
+    second: PlayerDrinking hammer_3
+  - first:
+      213: -7644462627871578439
+    second: PlayerDrinking hammer_4
+  - first:
+      213: 6760710276766195463
+    second: PlayerDrinking hammer_5
+  - first:
+      213: 6869077651244236462
+    second: PlayerDrinking hammer_6
+  - first:
+      213: 1815804632703552631
+    second: PlayerDrinking hammer_7
+  - first:
+      213: 5575144860871244245
+    second: PlayerDrinking hammer_8
+  - first:
+      213: -4994112851928868108
+    second: PlayerDrinking hammer_9
+  - first:
+      213: 1059036413178362176
+    second: PlayerDrinking hammer_10
+  - first:
+      213: -7411256647175811690
+    second: PlayerDrinking hammer_11
+  - first:
+      213: -125021340246382524
+    second: PlayerDrinking hammer_12
+  - first:
+      213: -5603036492001560274
+    second: PlayerDrinking hammer_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 119
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa129bb324a443630800000000000000
+      internalID: 3905828425167348138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 434
+        width: 15
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710525fad40903780800000000000000
+      internalID: -8705299416378879977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 384
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1460a7d1c7bf316f0800000000000000
+      internalID: -714951405332724159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 384
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b266f4d989fe56490800000000000000
+      internalID: -7753527744695146965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b627f6fdb969e590800000000000000
+      internalID: -7644462627871578439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 256
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f5bfb4d2ed2dd50800000000000000
+      internalID: 6760710276766195463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 256
+        width: 128
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaebcf8dabdd35f50800000000000000
+      internalID: 6869077651244236462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 128
+        width: 132
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ccdc161b8033910800000000000000
+      internalID: 1815804632703552631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 128
+        width: 119
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9339b66b4ee5d40800000000000000
+      internalID: 5575144860871244245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 128
+        width: 119
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa119432d851bab0800000000000000
+      internalID: -4994112851928868108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04933bbb10472be00800000000000000
+      internalID: 1059036413178362176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 132
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d45dd885de52990800000000000000
+      internalID: -7411256647175811690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_12
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 17
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4486541e0c5d34ef0800000000000000
+      internalID: -125021340246382524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDrinking hammer_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2932b62ff30e32b0800000000000000
+      internalID: -5603036492001560274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerDrinking hammer_0: 3905828425167348138
+      PlayerDrinking hammer_1: -8705299416378879977
+      PlayerDrinking hammer_10: 1059036413178362176
+      PlayerDrinking hammer_11: -7411256647175811690
+      PlayerDrinking hammer_12: -125021340246382524
+      PlayerDrinking hammer_13: -5603036492001560274
+      PlayerDrinking hammer_2: -714951405332724159
+      PlayerDrinking hammer_3: -7753527744695146965
+      PlayerDrinking hammer_4: -7644462627871578439
+      PlayerDrinking hammer_5: 6760710276766195463
+      PlayerDrinking hammer_6: 6869077651244236462
+      PlayerDrinking hammer_7: 1815804632703552631
+      PlayerDrinking hammer_8: 5575144860871244245
+      PlayerDrinking hammer_9: -4994112851928868108
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
