@@ -83,7 +83,7 @@ public class EnemyBase : MonoBehaviour
         }
         else if (isPlayerInRange)
         {
-            if ( currentState != EnemyStates.Attacking)
+            if ( !isAttacking)
             {
                 if (canAttack())
                 {

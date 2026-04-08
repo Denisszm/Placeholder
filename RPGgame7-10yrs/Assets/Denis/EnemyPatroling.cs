@@ -6,7 +6,6 @@ public class EnemyPatroling : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
-    public GameObject parent;
     public GameObject enemy;
     private Rigidbody2D rb;
     private Animator anim;
@@ -67,7 +66,7 @@ public class EnemyPatroling : MonoBehaviour
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
         Gizmos.color = Color.forestGreen;
-        Gizmos.DrawSphere(parent.transform.position, 0.3f);
+       
         
     }
 }

@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KingFrogBossJump_0: 9201396218545624013
+      KingFrogBossJump_1: 642868767945737080
+      KingFrogBossJump_10: 9073255936185068601
+      KingFrogBossJump_2: 6853450591159752382
+      KingFrogBossJump_3: 1168597270012717069
+      KingFrogBossJump_4: -1900503816344223265
+      KingFrogBossJump_5: -1625096287411223349
+      KingFrogBossJump_6: -7588070411869791453
+      KingFrogBossJump_7: -8922073374412545548
+      KingFrogBossJump_8: -6897738711012931759
+      KingFrogBossJump_9: -126254350963244009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

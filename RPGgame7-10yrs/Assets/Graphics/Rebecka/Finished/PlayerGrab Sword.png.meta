@@ -114,6 +114,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -284,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerGrab Sword_0: 607113306626323310
+      PlayerGrab Sword_1: 7495228771841979741
+      PlayerGrab Sword_2: -4071670186623164398
+      PlayerGrab Sword_3: 6234928468737432043
+      PlayerGrab Sword_4: -2322013794184336470
+      PlayerGrab Sword_5: 5770787173993854330
+      PlayerGrab Sword_6: -28564218644997335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

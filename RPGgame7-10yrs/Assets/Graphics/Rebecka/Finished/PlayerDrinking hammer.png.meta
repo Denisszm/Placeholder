@@ -135,6 +135,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDrinking hammer_0: 3905828425167348138
+      PlayerDrinking hammer_1: -8705299416378879977
+      PlayerDrinking hammer_10: 1059036413178362176
+      PlayerDrinking hammer_11: -7411256647175811690
+      PlayerDrinking hammer_12: -125021340246382524
+      PlayerDrinking hammer_13: -5603036492001560274
+      PlayerDrinking hammer_2: -714951405332724159
+      PlayerDrinking hammer_3: -7753527744695146965
+      PlayerDrinking hammer_4: -7644462627871578439
+      PlayerDrinking hammer_5: 6760710276766195463
+      PlayerDrinking hammer_6: 6869077651244236462
+      PlayerDrinking hammer_7: 1815804632703552631
+      PlayerDrinking hammer_8: 5575144860871244245
+      PlayerDrinking hammer_9: -4994112851928868108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
