@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossBrain : MonoBehaviour
@@ -16,14 +17,16 @@ public class BossBrain : MonoBehaviour
     public BossPhases currentBossPhase;
     public float lastAttack = 0;
     [SerializeField] public float attackCooldown = 10;
+    [SerializeField] public float tranistionAttackCooldown = 0.5f;
     [SerializeField] public float attackWindUp = 0.2f;
     [SerializeField] public float hitboxDuration = 0.1f;
     public int totalJumpAttacks = 0;
-    public int jumpAttacksBeforeTongue = 0;
+    public int jumpAttacksBeforeTongue = 6;
     public float jumpHeight = 8f;
     [Header("BossStates & Bools")]
     public bool startBossfight;
     public bool areThereFlies;
+    public bool istTransitionFinished;
     public bool isIdle => currentBossState == BossStates.Idle;
     public bool isJumping => currentBossState == BossStates.Jumping;
     public bool isLanding => currentBossState == BossStates.Landing;
@@ -51,6 +54,8 @@ public class BossBrain : MonoBehaviour
     void Start()
     {
         initialScaleX = transform.localScale.x;
+        currentBossState = BossStates.Idle;
+        currentBossPhase = BossPhases.Phase1;
     }
     private void OnDrawGizmosSelected()
     {
@@ -69,13 +74,13 @@ public class BossBrain : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isJumping && collision.gameObject.CompareTag("Ground"))
-        {
-            currentBossState = BossStates.Landing;
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        currentBossState = BossStates.Landing;
+    //    }
+    //}
     public void LookAt(Vector2 targetPosition)
     {
         if (targetPosition.x > transform.position.x)
@@ -91,7 +96,23 @@ public class BossBrain : MonoBehaviour
     {
         return Time.time > lastAttack + attackCooldown;
     }
+    void CheckForFlies()
+    {
+        GameObject[] flies = GameObject.FindGameObjectsWithTag("Fly");
+        if (flies.Length > 0)
+        {
+            areThereFlies = true;
+        }
+        else
+        {
+            areThereFlies = false;
+        }
 
+        if (areThereFlies && inPhase2 && isIdle)
+        {
+            currentBossState = BossStates.Eating;
+        }
+    }
     void Update()
     {
         if (!startBossfight || isDead)
@@ -106,13 +127,23 @@ public class BossBrain : MonoBehaviour
                 return;
 
             }
-            if (HP <= 3000 && inPhase1)
+            if (istTransitionFinished)
             {
-                currentBossState = BossStates.PhaseTransition;
                 currentBossPhase = BossPhases.Phase2;
+                attackCooldown = 5;
+            }
+            if (HP <= 3000 && inPhase1 && !istTransitionFinished)
+            {
+                if (!isPhaseTransition)
+                {
+                    currentBossState = BossStates.PhaseTransition;
+                    attackCooldown = tranistionAttackCooldown;
+                }
+                return;
             }
             if (isIdle && canAttack())
             {
+                CheckForFlies();
                 ExecuteNextMove();
             }
         }
@@ -121,28 +152,28 @@ public class BossBrain : MonoBehaviour
     {
         lastAttack = Time.time;
 
-        if ( inPhase1)
+        if (inPhase1)
         {
             currentBossState = BossStates.Jumping;
         }
-        else if ( inPhase2)
+        else if (inPhase2)
         {
-            if (areThereFlies)
+            if (totalJumpAttacks < jumpAttacksBeforeTongue)
             {
-                currentBossState = BossStates.Eating;
+                currentBossState = BossStates.Jumping;
+                totalJumpAttacks++;
             }
-            else if (totalJumpAttacks == jumpAttacksBeforeTongue)
+            else if (areThereFlies)
             {
+               
+                currentBossState = BossStates.Eating;
                 totalJumpAttacks = 0;
-                currentBossState = BossStates.TongoueAttack;
             }
             else
             {
-                currentBossState = BossStates.Jumping;
-                if (inPhase2)
-                {
-                    totalJumpAttacks++;
-                }
+                
+                currentBossState = BossStates.TongoueAttack;
+                totalJumpAttacks = 0;
             }
         }
     }
