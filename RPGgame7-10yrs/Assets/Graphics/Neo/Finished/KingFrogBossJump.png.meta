@@ -78,10 +78,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,10 +146,10 @@ TextureImporter:
       name: KingFrogBossJump_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 1592
-        width: 671
-        height: 536
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: KingFrogBossJump_1
       rect:
         serializedVersion: 2
-        x: 881
-        y: 1610
-        width: 599
-        height: 533
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: KingFrogBossJump_2
       rect:
         serializedVersion: 2
-        x: 1715
-        y: 1610
-        width: 515
-        height: 461
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: KingFrogBossJump_3
       rect:
         serializedVersion: 2
-        x: 182
-        y: 887
-        width: 512
-        height: 557
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: KingFrogBossJump_4
       rect:
         serializedVersion: 2
-        x: 872
-        y: 836
-        width: 557
-        height: 668
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: KingFrogBossJump_5
       rect:
         serializedVersion: 2
-        x: 1121
-        y: 1433
-        width: 89
-        height: 92
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: KingFrogBossJump_6
       rect:
         serializedVersion: 2
-        x: 1760
-        y: 1409
-        width: 89
-        height: 92
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: KingFrogBossJump_7
       rect:
         serializedVersion: 2
-        x: 1673
-        y: 887
-        width: 557
-        height: 479
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,77 +318,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: KingFrogBossJump_8
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 524
-        width: 89
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1570d98203f4640a0800000000000000
-      internalID: -6897738711012931759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingFrogBossJump_9
-      rect:
-        serializedVersion: 2
-        x: 881
-        y: 74
-        width: 599
-        height: 515
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7140d7336547f3ef0800000000000000
-      internalID: -126254350963244009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingFrogBossJump_10
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 74
-        width: 569
-        height: 416
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93ce388a33eaaed70800000000000000
-      internalID: 9073255936185068601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c0e4e056aafb4d546965e1f39b85f7d7
     internalID: 0
     vertices: []
     indices: 
@@ -396,19 +330,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       KingFrogBossJump_0: 9201396218545624013
       KingFrogBossJump_1: 642868767945737080
-      KingFrogBossJump_10: 9073255936185068601
       KingFrogBossJump_2: 6853450591159752382
       KingFrogBossJump_3: 1168597270012717069
       KingFrogBossJump_4: -1900503816344223265
       KingFrogBossJump_5: -1625096287411223349
       KingFrogBossJump_6: -7588070411869791453
       KingFrogBossJump_7: -8922073374412545548
-      KingFrogBossJump_8: -6897738711012931759
-      KingFrogBossJump_9: -126254350963244009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

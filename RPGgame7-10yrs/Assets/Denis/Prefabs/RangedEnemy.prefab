@@ -463,7 +463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 5200375996807225130}
   pointB: {fileID: 3713984655754698953}
-  parent: {fileID: 0}
   enemy: {fileID: 7175269702111595713}
 --- !u!50 &6379721592774750832
 Rigidbody2D:
@@ -527,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitbox: {fileID: 5041363590440722884}
-  arrowPrefab: {fileID: 7121433294914281205, guid: 16cf4a7a2adf13c4ebeb0646b9bfb12d, type: 3}
+  arrowPrefab: {fileID: 3876821883928384719, guid: f7d5311d1252485429db87dd8aa0d70e, type: 3}
   shotPoint: {fileID: 8693863781447095023}
 --- !u!61 &3666419741637842843
 BoxCollider2D:
@@ -563,7 +562,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 7.067137}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -573,5 +572,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 25, y: 4}
+  m_Size: {x: 91.40105, y: 18.134274}
   m_EdgeRadius: 0

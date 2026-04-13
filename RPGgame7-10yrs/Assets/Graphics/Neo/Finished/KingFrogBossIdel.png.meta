@@ -57,10 +57,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,10 +125,10 @@ TextureImporter:
       name: KingFrogBossIdel_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 824
-        width: 671
-        height: 536
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: KingFrogBossIdel_1
       rect:
         serializedVersion: 2
-        x: 881
-        y: 842
-        width: 599
-        height: 533
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: KingFrogBossIdel_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 56
-        width: 671
-        height: 536
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: KingFrogBossIdel_3
       rect:
         serializedVersion: 2
-        x: 881
-        y: 74
-        width: 599
-        height: 533
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5dbb70c53275bfd49bfeea1abb7f3c8c
     internalID: 0
     vertices: []
     indices: 
@@ -221,7 +221,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       KingFrogBossIdel_0: 5613294999682862740
       KingFrogBossIdel_1: 8002812971488020357

@@ -7,6 +7,7 @@ public class BossJumpingAttack : MonoBehaviour
     private BossBrain brain;
     public Rigidbody2D rb;
     private bool isExecutingSequence = false;
+    private Animator anim;
     public Transform floor;
 
     [Header("Sequence Settings")]
@@ -25,6 +26,7 @@ public class BossJumpingAttack : MonoBehaviour
     void Start()
     {
         brain = GetComponent<BossBrain>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -32,9 +34,11 @@ public class BossJumpingAttack : MonoBehaviour
         {
             brain = GetComponent<BossBrain>();
             rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
         }
         if ( brain.isJumping && !isExecutingSequence || brain.isPhaseTransition && !isExecutingSequence)
         {
+            rb.linearVelocity = Vector3.zero;
             StartCoroutine(JumpSequence());
             Debug.Log("I am gonna jump");
         }
@@ -47,7 +51,7 @@ public class BossJumpingAttack : MonoBehaviour
         if (wasTranisition)
         {
             Debug.Log("I have twenty jumps");
-            jumpCount = 5;
+            jumpCount = 20;
         }
         else
         {
@@ -58,6 +62,9 @@ public class BossJumpingAttack : MonoBehaviour
         {
            
             Debug.Log("I am jumping");
+            anim.SetBool("doJump", true);
+            anim.SetBool("doIdle", false);
+            anim.SetBool("doLand", false);
             brain.currentBossState = BossBrain.BossStates.Jumping;
             float targetx = 0;
             if (brain.inPhase2)
@@ -65,7 +72,7 @@ public class BossJumpingAttack : MonoBehaviour
                 Debug.Log("I am finding player");
                 GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
                 GameObject player = players[Random.Range(0, players.Length)];
-                targetx = player.transform.position.x + Random.Range(-2.5f, 2.5f);
+                targetx = player.transform.position.x + Random.Range(-15f, 15f);
             }
             else
             {
@@ -73,8 +80,8 @@ public class BossJumpingAttack : MonoBehaviour
                 targetx = Random.Range(brain.minX, brain.maxX);
             }
             targetx = Mathf.Clamp(targetx, brain.minX, brain.maxX);
-
             rb.linearVelocity = new Vector2(0, launchUpSpeedY);
+            yield return new WaitForSeconds(0.667f);
             Debug.Log("I am jumping over camera");
             float cameraTopEdge = Camera.main.transform.position.y + Camera.main.orthographicSize;
             float offScreenTarget = cameraTopEdge + 2f;
@@ -100,7 +107,7 @@ public class BossJumpingAttack : MonoBehaviour
             }
 
             Debug.Log("I am spawning warning");
-            Vector3 warningPos = new Vector3(targetx, floor.position.y + 1f, 0);
+            Vector3 warningPos = new Vector3(targetx, floor.position.y + 2.6f, 0);
             GameObject warning = Instantiate(warningPrefab, warningPos, Quaternion.identity);
             if (wasTranisition)
             {
@@ -128,7 +135,7 @@ public class BossJumpingAttack : MonoBehaviour
             bool grounded = false;
             while (!grounded)
             {
-                yield return new WaitForSeconds(0.05f); // Check every few frames
+                yield return new WaitForSeconds(0.05f);
                 if (Mathf.Abs(transform.position.y - lastY) < 0.01f)
                 {
                     grounded = true;
@@ -136,11 +143,17 @@ public class BossJumpingAttack : MonoBehaviour
                 lastY = transform.position.y;
             }
             Debug.Log("I landed");
+            anim.SetBool("doJump", false);
+            anim.SetBool("doIdle", false);
+            anim.SetBool("doLand", true);
             brain.currentBossState = BossBrain.BossStates.Landing;
             rb.gravityScale = 3f;
             rb.linearVelocity = Vector2.zero;
             GameObject shockwave = Instantiate(shockwavePrefab, transform.position - new Vector3(0f, 1.6f), Quaternion.identity);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.3f);
+            anim.SetBool("doJump", false);
+            anim.SetBool("doLand", false);
+            anim.SetBool("doIdle", true);
         }
         yield return new WaitForSeconds(0.5f);
         if (wasTranisition)
@@ -148,6 +161,8 @@ public class BossJumpingAttack : MonoBehaviour
             brain.istTransitionFinished = true;
         }
         Debug.Log("I am done for now");
+
+        anim.SetBool("doIdle", true);
         brain.currentBossState = BossBrain.BossStates.Idle;
         isExecutingSequence = false;
     }

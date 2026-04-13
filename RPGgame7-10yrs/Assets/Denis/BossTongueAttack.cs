@@ -18,11 +18,13 @@ public class BossTongueAttack : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] public GameObject tonguePrefab;
     [SerializeField] public GameObject annoyingFly;
+    private Rigidbody2D rb;
 
     public Transform tongueOrigin;
     void Start()
     {
         brain = GetComponent<BossBrain>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
    
@@ -30,6 +32,7 @@ public class BossTongueAttack : MonoBehaviour
     {
         if ((brain.isTongueAttacking || brain.isEating) && !isAttacking)
         {
+            rb.linearVelocity = Vector3.zero;
             StartCoroutine(TongueSequence());
         }
     }

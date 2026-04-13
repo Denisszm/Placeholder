@@ -107,11 +107,6 @@ public class BossBrain : MonoBehaviour
         {
             areThereFlies = false;
         }
-
-        if (areThereFlies && inPhase2 && isIdle)
-        {
-            currentBossState = BossStates.Eating;
-        }
     }
     void Update()
     {
@@ -130,7 +125,7 @@ public class BossBrain : MonoBehaviour
             if (istTransitionFinished)
             {
                 currentBossPhase = BossPhases.Phase2;
-                attackCooldown = 5;
+                attackCooldown = 20;
             }
             if (HP <= 3000 && inPhase1 && !istTransitionFinished)
             {
@@ -143,7 +138,6 @@ public class BossBrain : MonoBehaviour
             }
             if (isIdle && canAttack())
             {
-                CheckForFlies();
                 ExecuteNextMove();
             }
         }
@@ -158,6 +152,7 @@ public class BossBrain : MonoBehaviour
         }
         else if (inPhase2)
         {
+            CheckForFlies();
             if (totalJumpAttacks < jumpAttacksBeforeTongue)
             {
                 currentBossState = BossStates.Jumping;
