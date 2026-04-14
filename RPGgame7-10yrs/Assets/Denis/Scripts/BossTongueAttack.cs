@@ -19,12 +19,14 @@ public class BossTongueAttack : MonoBehaviour
     [SerializeField] public GameObject tonguePrefab;
     [SerializeField] public GameObject annoyingFly;
     private Rigidbody2D rb;
+    private Animator anim;
 
     public Transform tongueOrigin;
     void Start()
     {
         brain = GetComponent<BossBrain>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
    
@@ -39,6 +41,9 @@ public class BossTongueAttack : MonoBehaviour
 
     IEnumerator TongueSequence()
     {
+        anim.SetBool("doJump", false);
+        anim.SetBool("doLand", false);
+        anim.SetBool("doIdle", true);
         isAttacking = true;
         Transform target = null;
         if ( brain.isEating)
@@ -65,6 +70,8 @@ public class BossTongueAttack : MonoBehaviour
         }
         Vector3 direction = (target.position - tongueOrigin.position).normalized;
         brain.LookAt(target.position);
+        anim.SetBool("doAttack", true);
+        anim.SetBool("doIdle", false);
         GameObject tongue = Instantiate(tonguePrefab, tongueOrigin.position, Quaternion.identity);
         if ( brain.isEating)
         {
@@ -139,6 +146,8 @@ public class BossTongueAttack : MonoBehaviour
         }
 
         Destroy(tongue);
+        anim.SetBool("doAttack", false);
+        anim.SetBool("doIdle", true);
         if (!brain.isEating)
         {
             brain.currentBossState = BossBrain.BossStates.Idle;

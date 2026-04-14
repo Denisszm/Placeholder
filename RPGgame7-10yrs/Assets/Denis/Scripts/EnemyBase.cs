@@ -74,14 +74,24 @@ public class EnemyBase : MonoBehaviour
             transform.localScale = new Vector3(initialScaleX, transform.localScale.y, 1);
         }
     }
+    public void TakeDamage(int amount)
+    {
+        if (isDead) return;
+
+        HP -= amount;
+        Debug.Log(gameObject.name + " took damage! Current HP: " + HP);
+
+        if (HP <= 0)
+        {
+            HP = 0;
+            currentState = EnemyStates.Dead;
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         
-        if (HP <= 0)
-        {
-            currentState = EnemyStates.Dead;
-        }
-        else if (isPlayerInRange)
+        if (isPlayerInRange)
         {
             if ( !isAttacking)
             {

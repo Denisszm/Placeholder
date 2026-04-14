@@ -9,7 +9,7 @@ public class BossBrain : MonoBehaviour
 
     private float initialScaleX;
     public Collider2D Collider;
-    [Header("EnemyStats")]
+    [Header("BossStats")]
     [SerializeField] public float speed = 5f;
     [SerializeField] public float attackRange = 2f;
     [SerializeField] public int HP = 10000;
@@ -21,7 +21,7 @@ public class BossBrain : MonoBehaviour
     [SerializeField] public float attackWindUp = 0.2f;
     [SerializeField] public float hitboxDuration = 0.1f;
     public int totalJumpAttacks = 0;
-    public int jumpAttacksBeforeTongue = 6;
+    public int jumpAttacksBeforeTongue = 3;
     public float jumpHeight = 8f;
     [Header("BossStates & Bools")]
     public bool startBossfight;
@@ -108,6 +108,20 @@ public class BossBrain : MonoBehaviour
             areThereFlies = false;
         }
     }
+    public void TakeDamage(int amount)
+    {
+        if (isDead) return;
+
+        HP -= amount;
+        Debug.Log(gameObject.name + " took damage! Current HP: " + HP);
+
+        if (HP <= 0)
+        {
+            HP = 0;
+            currentBossState = BossStates.Dead;
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         if (!startBossfight || isDead)
@@ -122,10 +136,11 @@ public class BossBrain : MonoBehaviour
                 return;
 
             }
-            if (istTransitionFinished)
+            if (istTransitionFinished && currentBossPhase != BossPhases.Phase2)
             {
                 currentBossPhase = BossPhases.Phase2;
-                attackCooldown = 20;
+                attackCooldown = 10f;
+                lastAttack = Time.time;
             }
             if (HP <= 3000 && inPhase1 && !istTransitionFinished)
             {

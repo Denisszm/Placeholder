@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2881902124702772498}
   - component: {fileID: 4944536899397811871}
   - component: {fileID: 599731258726363843}
+  - component: {fileID: 6757492715694670437}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: MeleeEnemy
@@ -80,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -658208893
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 47c57ec042908274d90fa197ba4b2544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -145,7 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 9006924672681040394}
   pointB: {fileID: 6271375425335065817}
-  parent: {fileID: 0}
   enemy: {fileID: 645568909156609594}
 --- !u!50 &2880311028316853147
 Rigidbody2D:
@@ -257,6 +257,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 25, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &6757492715694670437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645568909156609594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad59948f28d868d46a943114145314de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTakeDamage: 1
+  Damage: 100
 --- !u!1 &5587811667910681651
 GameObject:
   m_ObjectHideFlags: 0

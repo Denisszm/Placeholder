@@ -18,7 +18,7 @@ TagManager:
   - Enemy
   - Player
   - Wall
-  - 
+  - Flies
   - 
   - 
   - 
@@ -42,8 +42,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2538554007
+    locked: 0
+  - name: Midground
+    uniqueID: 2315822861
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Entities
+    uniqueID: 3636758403
+    locked: 0
+  - name: ForeGround
+    uniqueID: 4223031225
     locked: 0
   m_RenderingLayers:
   - Default

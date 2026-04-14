@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 3cbd3ec4f57f9384ea57b0505054134f
+guid: 9eec2889619c87d43be362875992ecbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -427066485589525634
-    second: Fly_0
+      213: -4889603851519002658
+    second: KingFrogBossJumpDown_0
   - first:
-      213: -4915312786560631855
-    second: Fly_1
+      213: -4183403265880547349
+    second: KingFrogBossJumpDown_1
   - first:
-      213: -7268135333770365264
-    second: Fly_2
+      213: 5577610388048966623
+    second: KingFrogBossJumpDown_2
   - first:
-      213: 7777728689631501661
-    second: Fly_3
+      213: -6240442637947059018
+    second: KingFrogBossJumpDown_3
+  - first:
+      213: -8308540960703781662
+    second: KingFrogBossJumpDown_4
+  - first:
+      213: -1689028524287266594
+    second: KingFrogBossJumpDown_5
+  - first:
+      213: -3525403963182912713
+    second: KingFrogBossJumpDown_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly_0
+      name: KingFrogBossJumpDown_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 92
+        y: 1718
+        width: 557
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c031f2c03da894447a89def7eb18194d
-      internalID: 1864080746
+      spriteID: ed7f3d90433a42cb0800000000000000
+      internalID: -4889603851519002658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_1
+      name: KingFrogBossJumpDown_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 218
+        y: 2141
+        width: 89
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a27aed854ee2e749b0f3d1feac58f0b
-      internalID: -2058836678
+      spriteID: bef1bf0f4e091f5c0800000000000000
+      internalID: -4183403265880547349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_2
+      name: KingFrogBossJumpDown_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
+        x: 800
+        y: 1640
+        width: 668
+        height: 557
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 31a1dce1a00793347a8065cae01e4724
-      internalID: -1633743256
+      spriteID: fd3ff23b817a76d40800000000000000
+      internalID: 5577610388048966623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_3
+      name: KingFrogBossJumpDown_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
+        x: 170
+        y: 905
+        width: 479
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59d7cedbaffa4e94ab98cc2a49589ead
-      internalID: 1107828165
+      spriteID: 6b4c6fbeb7e7569a0800000000000000
+      internalID: -6240442637947059018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingFrogBossJumpDown_4
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 857
+        width: 581
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4e77b440222bc80800000000000000
+      internalID: -8308540960703781662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingFrogBossJumpDown_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 89
+        width: 614
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0fa5a818d5f88e0800000000000000
+      internalID: -1689028524287266594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingFrogBossJumpDown_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 116
+        width: 674
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b6abc16cf331fc0800000000000000
+      internalID: -3525403963182912713
       vertices: []
       indices: 
       edges: []
@@ -213,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f2f7ca482750c0c429e39dd1377ccf33
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -221,14 +296,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable:
-      Fly_0: 1864080746
-      Fly_1: -2058836678
-      Fly_2: -1633743256
-      Fly_3: 1107828165
+      entries: []
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

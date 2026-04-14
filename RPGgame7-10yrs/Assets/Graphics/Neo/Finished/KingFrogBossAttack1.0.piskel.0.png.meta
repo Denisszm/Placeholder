@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 3cbd3ec4f57f9384ea57b0505054134f
+guid: 74fedf67359d14d45b7d78535993c09a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -427066485589525634
-    second: Fly_0
+      213: -3873493166195033033
+    second: KingFrogBossAttack1.0.piskel.0_0
   - first:
-      213: -4915312786560631855
-    second: Fly_1
-  - first:
-      213: -7268135333770365264
-    second: Fly_2
-  - first:
-      213: 7777728689631501661
-    second: Fly_3
+      213: -2330770262534070272
+    second: KingFrogBossAttack1.0.piskel.0_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly_0
+      name: KingFrogBossAttack1.0.piskel.0_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 65
+        y: 884
+        width: 674
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c031f2c03da894447a89def7eb18194d
-      internalID: 1864080746
+      spriteID: 73cba0dec769e3ac0800000000000000
+      internalID: -3873493166195033033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_1
+      name: KingFrogBossAttack1.0.piskel.0_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 122
+        y: 95
+        width: 590
+        height: 491
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a27aed854ee2e749b0f3d1feac58f0b
-      internalID: -2058836678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fly_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a1dce1a00793347a8065cae01e4724
-      internalID: -1633743256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fly_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59d7cedbaffa4e94ab98cc2a49589ead
-      internalID: 1107828165
+      spriteID: 000ec909bc077afd0800000000000000
+      internalID: -2330770262534070272
       vertices: []
       indices: 
       edges: []
@@ -213,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f2f7ca482750c0c429e39dd1377ccf33
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -221,14 +171,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable:
-      Fly_0: 1864080746
-      Fly_1: -2058836678
-      Fly_2: -1633743256
-      Fly_3: 1107828165
+      entries: []
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

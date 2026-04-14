@@ -40,7 +40,7 @@ AnimatorStateTransition:
     m_ConditionEvent: doLand
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: doidle
+    m_ConditionEvent: doIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4084621425922518260}
@@ -95,7 +95,7 @@ AnimatorStateTransition:
     m_ConditionEvent: doAttack
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: doidle
+    m_ConditionEvent: doIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8582040188473416770}
@@ -193,7 +193,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: doidle
+  - m_Name: doIdle
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -221,7 +221,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: doidle
+    m_ConditionEvent: doIdle
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: doAttack
@@ -283,7 +283,7 @@ AnimatorStateTransition:
     m_ConditionEvent: doJump
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: doidle
+    m_ConditionEvent: doIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4994524597847161577}

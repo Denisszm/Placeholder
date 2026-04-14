@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6728273149381526291}
   - component: {fileID: 6328027518075280221}
   - component: {fileID: -7275848614782496482}
+  - component: {fileID: -3677874823756700761}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -71936071
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -4346244404228752641, guid: df7150ec40c19f04bb70c6da28ba589f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -175,3 +176,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-3677874823756700761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3876821883928384719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad59948f28d868d46a943114145314de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTakeDamage: 1
+  Damage: 300
