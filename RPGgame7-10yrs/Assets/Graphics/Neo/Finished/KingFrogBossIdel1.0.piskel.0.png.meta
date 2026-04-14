@@ -57,7 +57,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -125,10 +125,10 @@ TextureImporter:
       name: KingFrogBossIdel1.0.piskel.0_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 884
-        width: 674
-        height: 476
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: KingFrogBossIdel1.0.piskel.0_1
       rect:
         serializedVersion: 2
-        x: 881
-        y: 863
-        width: 599
-        height: 512
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: KingFrogBossIdel1.0.piskel.0_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 86
-        width: 671
-        height: 506
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: KingFrogBossIdel1.0.piskel.0_3
       rect:
         serializedVersion: 2
-        x: 881
-        y: 95
-        width: 599
-        height: 512
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6c17547614a4d17428d80a2365cc8336
     internalID: 0
     vertices: []
     indices: 
@@ -221,8 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      KingFrogBossIdel1.0.piskel.0_0: 2541816600537751058
+      KingFrogBossIdel1.0.piskel.0_1: 6214008263276278471
+      KingFrogBossIdel1.0.piskel.0_2: 9000816993193042905
+      KingFrogBossIdel1.0.piskel.0_3: -5667864695972459229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

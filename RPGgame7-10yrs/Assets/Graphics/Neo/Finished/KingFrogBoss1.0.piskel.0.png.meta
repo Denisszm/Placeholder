@@ -78,7 +78,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -146,10 +146,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 1652
-        width: 674
-        height: 476
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_1
       rect:
         serializedVersion: 2
-        x: 881
-        y: 1649
-        width: 599
-        height: 494
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_2
       rect:
         serializedVersion: 2
-        x: 1715
-        y: 1643
-        width: 515
-        height: 428
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_3
       rect:
         serializedVersion: 2
-        x: 182
-        y: 887
-        width: 512
-        height: 557
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_4
       rect:
         serializedVersion: 2
-        x: 872
-        y: 836
-        width: 557
-        height: 668
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_5
       rect:
         serializedVersion: 2
-        x: 1121
-        y: 1433
-        width: 89
-        height: 92
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_6
       rect:
         serializedVersion: 2
-        x: 1760
-        y: 1409
-        width: 89
-        height: 92
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: KingFrogBoss1.0.piskel.0_7
       rect:
         serializedVersion: 2
-        x: 1673
-        y: 887
-        width: 602
-        height: 479
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,77 +318,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: KingFrogBoss1.0.piskel.0_8
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 524
-        width: 89
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 546b281338e695e40800000000000000
-      internalID: 5645665117636048453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingFrogBoss1.0.piskel.0_9
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 89
-        width: 614
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93e298c1576d3b200800000000000000
-      internalID: 194735007385333305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KingFrogBoss1.0.piskel.0_10
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 89
-        width: 581
-        height: 422
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fb7f015e54506aa0800000000000000
-      internalID: -6169838725433951240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b16f2e5b06406574383fe610eea8b130
     internalID: 0
     vertices: []
     indices: 
@@ -396,8 +330,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      KingFrogBoss1.0.piskel.0_0: -7018532680996312489
+      KingFrogBoss1.0.piskel.0_1: -8860719531932233936
+      KingFrogBoss1.0.piskel.0_2: 1737133094894435570
+      KingFrogBoss1.0.piskel.0_3: -1204815527238344630
+      KingFrogBoss1.0.piskel.0_4: 8050685491719710225
+      KingFrogBoss1.0.piskel.0_5: -7738417030380784390
+      KingFrogBoss1.0.piskel.0_6: -2125391059467862883
+      KingFrogBoss1.0.piskel.0_7: -3377849723222969326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
