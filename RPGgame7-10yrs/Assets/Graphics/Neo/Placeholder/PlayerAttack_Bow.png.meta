@@ -162,511 +162,524 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAttack2_0
+      name: PlayerAttack_Bow_0
       rect:
         serializedVersion: 2
-        x: 329
-        y: 3086
-        width: 119
-        height: 356
+        x: 0
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 33301e12bf3000ee0800000000000000
-      internalID: -1297032315542633677
+      spriteID: 66d1b4db78552284b822ce3adf9e2b10
+      internalID: 552740603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_1
+      name: PlayerAttack_Bow_1
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 3086
-        width: 107
-        height: 356
+        x: 768
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ccc72cea9b312a10800000000000000
-      internalID: 1882851655790611654
+      spriteID: 979a9f1283ffec04db8a90e86e8d0142
+      internalID: -1218753262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_2
+      name: PlayerAttack_Bow_2
       rect:
         serializedVersion: 2
-        x: 1877
-        y: 3086
-        width: 107
-        height: 356
+        x: 1536
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50c0a7e0bf52a3c40800000000000000
-      internalID: 5492744455741639685
+      spriteID: 5f64fefc78a385149b245c9744ca18a1
+      internalID: -64316065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_3
+      name: PlayerAttack_Bow_3
       rect:
         serializedVersion: 2
-        x: 2636
-        y: 3086
-        width: 116
-        height: 356
+        x: 2304
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e04d15e5aac22de0800000000000000
-      internalID: -1359301323650154263
+      spriteID: b1d207dabd684da40920db256dedc112
+      internalID: 1002248322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_4
+      name: PlayerAttack_Bow_4
       rect:
         serializedVersion: 2
-        x: 3380
-        y: 3086
-        width: 140
-        height: 356
+        x: 3072
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7d3d989ec7432800800000000000000
-      internalID: 586391329137573244
+      spriteID: 31126efbe0e1174449ac4a31a10b49df
+      internalID: -2050700057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_5
+      name: PlayerAttack_Bow_5
       rect:
         serializedVersion: 2
-        x: 308
-        y: 2318
-        width: 182
-        height: 356
+        x: 0
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 602acecb67bde3a00800000000000000
-      internalID: 738268691957588486
+      spriteID: 804c167967135c64e9bb91e263a27c3e
+      internalID: -1570808050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_6
+      name: PlayerAttack_Bow_6
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 2318
-        width: 215
-        height: 353
+        x: 768
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e37d386150fcde0d0800000000000000
-      internalID: -3391827323580590274
+      spriteID: 8a893b9fc95db7c45800fe85de1f9fba
+      internalID: 607509984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_7
+      name: PlayerAttack_Bow_7
       rect:
         serializedVersion: 2
-        x: 1814
-        y: 2318
-        width: 164
-        height: 353
+        x: 1536
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 71a1d46ae0ed6a060800000000000000
-      internalID: 6964498028276029975
+      spriteID: 9a91fbe7054f08a48b1390e72bec4c33
+      internalID: -1444425897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_8
+      name: PlayerAttack_Bow_8
       rect:
         serializedVersion: 2
-        x: 2567
-        y: 2318
-        width: 191
-        height: 356
+        x: 2304
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56cd43a6eda5eb8b0800000000000000
-      internalID: -5134566613844698011
+      spriteID: a6b0ed0549ac5314687534e9e7d21ea8
+      internalID: -1728324378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_9
+      name: PlayerAttack_Bow_9
       rect:
         serializedVersion: 2
-        x: 3341
-        y: 2318
-        width: 185
-        height: 356
+        x: 3072
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: af5d5201bd174bf20800000000000000
-      internalID: 3437497601273222650
+      spriteID: 3b1c965bcfe5ba24fb13fd9b1d12c316
+      internalID: 542825921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_10
+      name: PlayerAttack_Bow_10
       rect:
         serializedVersion: 2
-        x: 284
-        y: 1550
-        width: 167
-        height: 356
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0df089318f2366870800000000000000
-      internalID: 8675677773237850064
+      spriteID: 0e342ba283988064eb7aea0007d1dcb2
+      internalID: -1921745282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_11
+      name: PlayerAttack_Bow_11
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 1556
-        width: 131
-        height: 347
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9312db79db0af54c0800000000000000
-      internalID: -4296538783333146311
+      spriteID: 159ae3ef3bed70946a4a968bb014cef4
+      internalID: 205688379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_12
+      name: PlayerAttack_Bow_12
       rect:
         serializedVersion: 2
-        x: 1838
-        y: 1556
-        width: 131
-        height: 347
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0c5e8a8fe9e30d650800000000000000
-      internalID: 6255568734915192256
+      spriteID: 5737b3edef2fdde4cae31fe4b6c2ced9
+      internalID: -514250424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_13
+      name: PlayerAttack_Bow_13
       rect:
         serializedVersion: 2
-        x: 2585
-        y: 1556
-        width: 158
-        height: 347
+        x: 2304
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 725e2a782cde456b0800000000000000
-      internalID: -5308356641007934169
+      spriteID: fdd091e8fcca83e42b9c628a89f3d2b3
+      internalID: -41861154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_14
+      name: PlayerAttack_Bow_14
       rect:
         serializedVersion: 2
-        x: 3341
-        y: 1550
-        width: 185
-        height: 353
+        x: 3072
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e939094c8b9c0ddd0800000000000000
-      internalID: -2463247200762686562
+      spriteID: a415e180a5214c14aa51ad1e33d5b8d5
+      internalID: 1498121689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_15
+      name: PlayerAttack_Bow_15
       rect:
         serializedVersion: 2
-        x: 263
-        y: 782
-        width: 188
-        height: 353
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ca6aacc231be83f40800000000000000
-      internalID: 5708570995280488108
+      spriteID: 23cbfc8f67cccbf4d8834d85a3d7e999
+      internalID: -1250477321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_16
+      name: PlayerAttack_Bow_16
       rect:
         serializedVersion: 2
-        x: 1028
-        y: 782
-        width: 194
-        height: 356
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 503210651c2578460800000000000000
-      internalID: 7243849515973812997
+      spriteID: 94bedb0223711a043bcfe2d6790e8fb8
+      internalID: -1363536161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_17
+      name: PlayerAttack_Bow_17
       rect:
         serializedVersion: 2
-        x: 1814
-        y: 782
-        width: 239
-        height: 356
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77629e8cdf0a7cfe0800000000000000
-      internalID: -1168788566421461385
+      spriteID: 604960d1b89853f41a0e1a946fb3cce6
+      internalID: 1509837142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_18
+      name: PlayerAttack_Bow_18
       rect:
         serializedVersion: 2
-        x: 2591
-        y: 782
-        width: 194
-        height: 356
+        x: 2304
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30ca8fac7381af810800000000000000
-      internalID: 1799777628995496963
+      spriteID: 84338d08b3f791240aca757e4471dea7
+      internalID: -1268134481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_19
+      name: PlayerAttack_Bow_19
       rect:
         serializedVersion: 2
-        x: 3380
-        y: 782
-        width: 140
-        height: 356
+        x: 3072
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9bbc1c351c5870960800000000000000
-      internalID: 7568164764199799737
+      spriteID: 5c49288aa4991044c9b0f5effa3f3ee3
+      internalID: 1913170456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_20
+      name: PlayerAttack_Bow_20
       rect:
         serializedVersion: 2
-        x: 332
-        y: 14
-        width: 116
-        height: 356
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 072520e5ae9c48c80800000000000000
-      internalID: -8321304203037093264
+      spriteID: d2d6d012fc98d9e4d97546ec4dbfdd0e
+      internalID: 409789923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_21
+      name: PlayerAttack_Bow_21
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 14
-        width: 107
-        height: 356
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 827781251e8cf7ab0800000000000000
-      internalID: -5008063390542170328
+      spriteID: 586a4efdedac35f448ed3ea48ba00541
+      internalID: -1776038125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack2_22
+      name: PlayerAttack_Bow_22
       rect:
         serializedVersion: 2
-        x: 1877
-        y: 14
-        width: 107
-        height: 356
+        x: 1536
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d7320582ce4f515c0800000000000000
-      internalID: -4245217778601024643
+      spriteID: 091b0bac1ac0c434ea50115f4e9268ff
+      internalID: -1381649261
       vertices: []
       indices: 
       edges: []
@@ -675,7 +688,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 82aefaa5f69a2574db0a6a81071709bc
     internalID: 0
     vertices: []
     indices: 
@@ -683,31 +696,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayerAttack2_0: -1297032315542633677
-      PlayerAttack2_1: 1882851655790611654
-      PlayerAttack2_10: 8675677773237850064
-      PlayerAttack2_11: -4296538783333146311
-      PlayerAttack2_12: 6255568734915192256
-      PlayerAttack2_13: -5308356641007934169
-      PlayerAttack2_14: -2463247200762686562
-      PlayerAttack2_15: 5708570995280488108
-      PlayerAttack2_16: 7243849515973812997
-      PlayerAttack2_17: -1168788566421461385
-      PlayerAttack2_18: 1799777628995496963
-      PlayerAttack2_19: 7568164764199799737
-      PlayerAttack2_2: 5492744455741639685
-      PlayerAttack2_20: -8321304203037093264
-      PlayerAttack2_21: -5008063390542170328
-      PlayerAttack2_22: -4245217778601024643
-      PlayerAttack2_3: -1359301323650154263
-      PlayerAttack2_4: 586391329137573244
-      PlayerAttack2_5: 738268691957588486
-      PlayerAttack2_6: -3391827323580590274
-      PlayerAttack2_7: 6964498028276029975
-      PlayerAttack2_8: -5134566613844698011
-      PlayerAttack2_9: 3437497601273222650
+      PlayerAttack_Bow_0: 552740603
+      PlayerAttack_Bow_1: -1218753262
+      PlayerAttack_Bow_10: -1921745282
+      PlayerAttack_Bow_11: 205688379
+      PlayerAttack_Bow_12: -514250424
+      PlayerAttack_Bow_13: -41861154
+      PlayerAttack_Bow_14: 1498121689
+      PlayerAttack_Bow_15: -1250477321
+      PlayerAttack_Bow_16: -1363536161
+      PlayerAttack_Bow_17: 1509837142
+      PlayerAttack_Bow_18: -1268134481
+      PlayerAttack_Bow_19: 1913170456
+      PlayerAttack_Bow_2: -64316065
+      PlayerAttack_Bow_20: 409789923
+      PlayerAttack_Bow_21: -1776038125
+      PlayerAttack_Bow_22: -1381649261
+      PlayerAttack_Bow_3: 1002248322
+      PlayerAttack_Bow_4: -2050700057
+      PlayerAttack_Bow_5: -1570808050
+      PlayerAttack_Bow_6: 607509984
+      PlayerAttack_Bow_7: -1444425897
+      PlayerAttack_Bow_8: -1728324378
+      PlayerAttack_Bow_9: 542825921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

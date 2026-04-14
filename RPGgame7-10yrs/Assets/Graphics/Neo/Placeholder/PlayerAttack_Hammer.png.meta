@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,10 +152,10 @@ TextureImporter:
       name: PlayerAttack3_0
       rect:
         serializedVersion: 2
-        x: 332
-        y: 2303
-        width: 341
-        height: 371
+        x: 0
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +174,10 @@ TextureImporter:
       name: PlayerAttack3_1
       rect:
         serializedVersion: 2
-        x: 572
-        y: 2432
-        width: 107
-        height: 53
+        x: 768
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +196,10 @@ TextureImporter:
       name: PlayerAttack3_2
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 2318
-        width: 275
-        height: 434
+        x: 1536
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +218,10 @@ TextureImporter:
       name: PlayerAttack3_3
       rect:
         serializedVersion: 2
-        x: 1877
-        y: 2318
-        width: 272
-        height: 383
+        x: 0
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +240,10 @@ TextureImporter:
       name: PlayerAttack3_4
       rect:
         serializedVersion: 2
-        x: 302
-        y: 1550
-        width: 305
-        height: 356
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +262,10 @@ TextureImporter:
       name: PlayerAttack3_5
       rect:
         serializedVersion: 2
-        x: 1091
-        y: 1550
-        width: 317
-        height: 356
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +284,10 @@ TextureImporter:
       name: PlayerAttack3_6
       rect:
         serializedVersion: 2
-        x: 1877
-        y: 1550
-        width: 326
-        height: 443
+        x: 0
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +306,10 @@ TextureImporter:
       name: PlayerAttack3_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 785
-        width: 448
-        height: 482
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +328,10 @@ TextureImporter:
       name: PlayerAttack3_8
       rect:
         serializedVersion: 2
-        x: 767
-        y: 788
-        width: 530
-        height: 218
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +350,10 @@ TextureImporter:
       name: PlayerAttack3_9
       rect:
         serializedVersion: 2
-        x: 1586
-        y: 788
-        width: 446
-        height: 215
+        x: 0
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +372,10 @@ TextureImporter:
       name: PlayerAttack3_10
       rect:
         serializedVersion: 2
-        x: 260
-        y: 5
-        width: 188
-        height: 293
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,55 +390,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: PlayerAttack3_11
-      rect:
-        serializedVersion: 2
-        x: 1100
-        y: 0
-        width: 341
-        height: 370
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a4e89a1c30dcb530800000000000000
-      internalID: 3872198736194626724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAttack3_12
-      rect:
-        serializedVersion: 2
-        x: 1340
-        y: 128
-        width: 107
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9907eb0cdf83c8a0800000000000000
-      internalID: -6286022479623812708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4ebfbe3beeb11e640899b21558d6bd48
     internalID: 0
     vertices: []
     indices: 
@@ -433,13 +402,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":4.0},"gridSpriteSize":{"x":768.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       PlayerAttack3_0: 8358774337733292673
       PlayerAttack3_1: 3066819536484072838
       PlayerAttack3_10: 1180591221029223535
-      PlayerAttack3_11: 3872198736194626724
-      PlayerAttack3_12: -6286022479623812708
       PlayerAttack3_2: -4586448585198805206
       PlayerAttack3_3: 4316284047796519217
       PlayerAttack3_4: 7108823219805462807
