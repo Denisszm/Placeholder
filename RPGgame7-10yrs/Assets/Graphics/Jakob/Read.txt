@@ -1,0 +1,9 @@
+DONE = klara (no animation)
+bakgrund/objekt 
+
+__________________________________________________________________________
+NOT_DONE = Klara (need animation)
+karaktärer
+__________________________________________________________________________
+
+(kan använda båda för placeholders)
